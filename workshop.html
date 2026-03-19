@@ -1,0 +1,3080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary SEO -->
+    <link rel="shortcut icon" href="logo.png?v=10" type="image/png">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo.png?v=10">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo.png?v=10">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png?v=10">
+    <title>Robotics Workshop for Schools & Institutes | STEM Program | KalkiOrion Robotics Labs</title>
+    <meta name="description" content="Book a robotics workshop for your school or institute. Hands‑on STEM program with QR‑verified certificates, reusable kits, and competition pathways. Perfect for CBSE/ICSE and CSR funding.">
+    <meta name="keywords" content="robotics workshop for schools, stem workshop, robotics lab for institutions, school robotics program, csr robotics funding, teacher training robotics">
+    <meta name="author" content="KalkiOrion Robotics Labs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kalkiorionroboticslabs.in/workshop.html">
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Robotics Workshop for Schools & Institutes - KalkiOrion Robotics Labs">
+    <meta property="og:description" content="Transform your school with India’s first QR‑verified robotics infrastructure. Reusable kits, dashboards, competitions and measurable outcomes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kalkiorionroboticslabs.in/workshop.html">
+    <meta property="og:image" content="https://kalkiorionroboticslabs.in/images/robotics-preview.jpg">
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Robotics Workshop for Schools - KalkiOrion">
+    <meta name="twitter:description" content="Hands‑on STEM workshops with verified outcomes. Book a free demo for your institution.">
+    <meta name="twitter:image" content="https://kalkiorionroboticslabs.in/images/robotics-preview.jpg">
+    <!-- Structured Data (JSON‑LD) -->
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"EducationalOrganization",
+        "name":"KalkiOrion Robotics Labs",
+        "url":"https://kalkiorionroboticslabs.in",
+        "description":"Robotics education programs for students and schools focusing on STEM and AI robotics learning.",
+        "sameAs":[
+            "https://www.facebook.com/profile.php?id=61588278818643",
+            "https://x.com/kalkiorionrobot",
+            "https://www.instagram.com/kalkiorionroboticslabs/",
+            "https://www.linkedin.com/company/kalki-orion-robotics-labs/",
+            "https://youtube.com/@kalkiorionroboticslabs?si=VKiubulxP-po81W3"
+        ]
+    }
+    </script>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+        /* ============ COMPLETE STYLE FROM INDEX.HTML (INCLUDING ALL MEDIA QUERIES) ============ */
+        :root {
+            --primary-dark: #0a0a0f;
+            --secondary-dark: #12121a;
+            --tertiary-dark: #1a1a24;
+            --accent-orange: #ff6b00;
+            --accent-orange-light: #ff8c42;
+            --accent-yellow: #ffc107;
+            --accent-yellow-light: #ffdd40;
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d4edd;
+            --text-light: #f0f0f0;
+            --text-muted: #a0a0b0;
+            --gradient-primary: linear-gradient(135deg, #ff6b00 0%, #ffc107 100%);
+            --gradient-secondary: linear-gradient(135deg, #00f3ff 0%, #9d4edd 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+        }
+        
+        .logo-font {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        
+        /* Particle Background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: 6px;
+        }
+        
+        /* Navigation - Futuristic Glass Effect */
+        .navbar {
+            background: rgba(10, 10, 15, 0.98);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.3rem 0;
+            background: rgba(10, 10, 15, 0.99);
+            box-shadow: 0 5px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .navbar-brand {
+            font-size: 1.4rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            padding: 0;
+        }
+        
+        .navbar-brand span {
+            font-size: 1.4rem;
+        }
+        
+        .company-logo {
+            height: 90px;
+            margin-right: 15px;
+            filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.5));
+            transition: transform 0.3s ease;
+        }
+        
+        .navbar-brand:hover .company-logo {
+            transform: scale(1.05) rotate(0deg);
+        }
+        
+        .navbar-nav {
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-light) !important;
+            margin: 0 0.3rem;
+            font-weight: 500;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0.8rem !important;
+            white-space: nowrap;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .nav-link:hover::after {
+            width: 70%;
+        }
+        
+        .nav-link.active {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .nav-link.active::after {
+            width: 70%;
+        }
+        
+        .navbar-toggler {
+            border: 1px solid var(--accent-orange);
+            padding: 0.25rem 0.5rem;
+            margin-left: auto;
+            order: 2;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.5);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 107, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .demo-nav-btn {
+            background: var(--gradient-secondary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .demo-nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 243, 255, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .brand-line-1 {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+        
+        .brand-line-2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        
+        /* Hero Section - Futuristic Design */
+        .hero-section {
+            min-height: auto;
+            padding: 140px 0 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 107, 0, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 243, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-yellow), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: textShine 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes textShine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .hero-subtitle::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: var(--gradient-primary);
+            border-radius: 3px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3); }
+            50% { transform: scale(1.05); box-shadow: 0 8px 25px rgba(255, 107, 0, 0.5); }
+            100% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3); }
+        }
+        
+        .hero-video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            border: 3px solid var(--accent-orange);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            max-width: 650px;
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 107, 0, 0.1), rgba(0, 243, 255, 0.1));
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .btn-primary-custom {
+            background: var(--gradient-primary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 5px 20px rgba(255, 107, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-primary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        .btn-primary-custom:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary-custom {
+            background: transparent;
+            border: 2px solid var(--accent-orange);
+            color: var(--accent-yellow);
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-secondary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--gradient-primary);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+        
+        .btn-secondary-custom:hover {
+            color: var(--primary-dark);
+            border-color: transparent;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+        }
+        
+        .btn-secondary-custom:hover::before {
+            width: 100%;
+        }
+        
+        /* Section Styling */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 4rem;
+            display: inline-block;
+        }
+        
+        .section-title h2 {
+            font-size: 3rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+            top: -30px;
+            left: -30px;
+            z-index: 1;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+        
+        /* Cards - Futuristic Glass Morphism */
+        .card-custom {
+            background: rgba(26, 26, 36, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+            z-index: 2;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
+        }
+        
+        .card-header-custom {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 2rem;
+            border-bottom: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header-custom::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .course-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: rgba(10, 10, 15, 0.3);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        .price-tag {
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+        }
+        
+        /* Floating Elements Animation */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--neon-blue) 0%, transparent 70%);
+            opacity: 0.1;
+            z-index: -1;
+            animation: float 20s infinite linear;
+        }
+        
+        .floating-element:nth-child(2n) {
+            background: radial-gradient(circle, var(--accent-orange) 0%, transparent 70%);
+            animation-direction: reverse;
+            animation-duration: 25s;
+        }
+        
+        .floating-element:nth-child(3n) {
+            background: radial-gradient(circle, var(--neon-purple) 0%, transparent 70%);
+            animation-duration: 30s;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -50px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: radial-gradient(ellipse at center, rgba(255, 107, 0, 0.05) 0%, transparent 70%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .stat-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            font-family: 'Orbitron', sans-serif;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Kit Cards */
+        .kit-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .kit-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: 'Rajdhani', sans-serif;
+            z-index: 3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 0.85rem;
+            max-width: 120px;
+            text-align: center;
+        }
+        
+        .kit-card .card-body h3 {
+            margin-top: 10px;
+            padding-right: 100px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .kit-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .kit-feature i {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            width: 30px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .course-availability {
+            color: var(--accent-orange) !important;
+            font-weight: 500;
+        }
+        
+        .kit-shipping-info {
+            color: var(--text-light) !important;
+            font-weight: 400;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 10, 15, 0.9), transparent);
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .testimonial-card {
+            padding: 2.5rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            height: 100%;
+        }
+        
+        .form-control-custom,
+        .form-select-custom {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 107, 0, 0.3);
+            color: var(--text-light);
+            padding: 1rem 1.2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .form-control-custom:focus,
+        .form-select-custom:focus {
+            border-color: var(--accent-orange);
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-light);
+            box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+        }
+        
+        /* Style the select dropdown */
+        .form-select-custom {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ff6b00' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 16px 12px;
+        }
+        
+        .form-select-custom option {
+            background-color: var(--tertiary-dark);
+            color: var(--text-light);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--accent-yellow-light);
+            margin-bottom: 0.5rem;
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        .contact-container {
+            background: rgba(26, 26, 36, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-info h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+        
+        .contact-details h4 {
+            font-family: 'Rajdhani', sans-serif;
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        .contact-details p {
+            color: var(--text-light);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+        
+        .contact-form h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .contact-form h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .form-status {
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .form-status.success {
+            background: rgba(0, 255, 0, 0.1);
+            color: #00ff00;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+        }
+        
+        .form-status.error {
+            background: rgba(255, 0, 0, 0.1);
+            color: #ff0000;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+        
+        .footer {
+            background: var(--secondary-dark);
+            border-top: 1px solid rgba(255, 107, 0, 0.3);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+        
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .footer-brand-logo {
+            height: 150px;
+            margin-right: 20px;
+            filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.5));
+        }
+        
+        .footer-brand-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 1.8rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        
+        .footer-brand-text span {
+            font-weight: 700;
+            display: block;
+            font-size: 1.6rem;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--accent-yellow);
+            border-radius: 50%;
+            margin-right: 0.8rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 1.2rem;
+        }
+        
+        .social-icon:hover {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .footer-links h5 {
+            color: var(--accent-yellow);
+            margin-bottom: 1.5rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h5::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent-yellow);
+            transform: translateX(5px);
+        }
+        
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loading-robot {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: robotFloat 2s infinite ease-in-out;
+        }
+        
+        .loading-robot::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            top: 0;
+            left: 20px;
+        }
+        
+        .loading-robot::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-dark);
+            border-radius: 50%;
+            top: 15px;
+            left: 30px;
+            box-shadow: 0 0 0 5px var(--accent-yellow);
+        }
+        
+        @keyframes robotFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .cart-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 300px;
+        }
+        
+        .cart-notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .about-text-yellow {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .btn-group-sm .btn {
+            padding: 0.25rem 0.5rem;
+        }
+        
+        /* ============ DESKTOP ENHANCEMENTS ============ */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1400px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1600px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .hero-section {
+                padding: 160px 0 100px;
+            }
+        }
+        @media (min-width: 992px) {
+            .video-container {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+        
+        /* ============ MOBILE VIEW FIXES ============ */
+        @media (max-width: 992px) {
+            .navbar {
+                padding: 0.5rem 0;
+            }
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                width: auto;
+                margin-right: 0;
+                max-width: 70%;
+            }
+            .brand-text {
+                flex-direction: column;
+                line-height: 1.1;
+            }
+            .brand-line-1 {
+                font-size: 1rem;
+                font-weight: 900;
+            }
+            .brand-line-2 {
+                font-size: 0.85rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+            .navbar-toggler {
+                order: 2;
+                margin-left: auto;
+                margin-right: 0;
+            }
+            .navbar-collapse {
+                background: rgba(10, 10, 15, 0.98);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                padding: 1.5rem;
+                border-radius: 15px;
+                margin-top: 15px;
+                border: 1px solid rgba(255, 107, 0, 0.3);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                max-height: 70vh;
+                overflow-y: auto;
+            }
+            .nav-link {
+                text-align: center;
+                padding: 0.8rem 1rem !important;
+                margin: 0.3rem 0;
+                font-size: 1.1rem;
+                border-bottom: 1px solid rgba(255, 107, 0, 0.1);
+                width: 100%;
+            }
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+            .nav-link::after {
+                display: none;
+            }
+            .demo-nav-btn {
+                margin-left: 0;
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                padding: 0.8rem 1.5rem;
+                font-size: 1.1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .navbar-nav {
+                width: 100%;
+                margin: 0;
+            }
+            .company-logo {
+                height: 50px;
+                margin-right: 10px;
+            }
+            .navbar-brand span {
+                font-size: 1rem;
+                white-space: normal;
+                line-height: 1.2;
+            }
+        }
+        
+        @media (min-width: 993px) {
+            .brand-text {
+                flex-direction: row;
+                align-items: center;
+            }
+            .brand-line-1 {
+                margin-right: 5px;
+            }
+            .brand-line-1, .brand-line-2 {
+                font-size: 1.4rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 120px;
+                padding-bottom: 60px;
+                min-height: auto;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 1.2rem;
+                line-height: 1.2;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+                text-align: center;
+                padding-left: 0;
+                margin-bottom: 2rem;
+                padding: 0 10px;
+            }
+            .hero-subtitle::before {
+                display: none;
+            }
+            .hero-badge {
+                margin: 0 auto 1.5rem;
+                display: block;
+                width: fit-content;
+                text-align: center;
+                font-size: 0.9rem;
+                padding: 0.5rem 1.2rem;
+            }
+            .d-flex.flex-wrap.gap-3 {
+                justify-content: center;
+                gap: 1rem !important;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .btn-primary-custom, .btn-secondary-custom {
+                width: 100%;
+                max-width: 280px;
+                padding: 0.9rem 1.5rem;
+                font-size: 1rem;
+                margin: 0.2rem 0;
+            }
+            .video-container {
+                height: auto;
+                margin-top: 2.5rem;
+                max-width: 100%;
+            }
+            .video-container .position-absolute {
+                max-width: 250px;
+                padding: 0.8rem;
+            }
+            .video-container .position-absolute h5 {
+                font-size: 0.9rem;
+            }
+            .video-container .position-absolute p {
+                font-size: 0.75rem;
+            }
+            .hero-video {
+                border-width: 2px;
+            }
+            .hero-section .row {
+                flex-direction: column;
+            }
+            .hero-section .col-lg-6 {
+                width: 100%;
+                padding: 0 15px;
+            }
+            .section {
+                padding: 70px 0;
+            }
+            .section-title {
+                margin-bottom: 3rem;
+                width: 100%;
+                text-align: center;
+            }
+            .section-title h2 {
+                font-size: 2.3rem;
+            }
+            .section-title::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .section-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 3rem;
+                padding: 0 1rem;
+            }
+            .stat-card {
+                padding: 1.2rem;
+                margin-bottom: 0.8rem;
+                min-height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .stat-number {
+                font-size: 2.2rem;
+                margin-bottom: 0.5rem;
+                line-height: 1;
+                text-align: center;
+                width: 100%;
+            }
+            .stat-card h5 {
+                font-size: 0.95rem;
+                margin-bottom: 0;
+                text-align: center;
+                line-height: 1.3;
+                width: 100%;
+            }
+            .stats-section .row {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            }
+            .stats-section .col-6 {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .card-custom {
+                margin-bottom: 2rem;
+            }
+            .card-header-custom {
+                padding: 1.5rem;
+            }
+            .course-icon {
+                font-size: 2.5rem;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                margin-bottom: 0.5rem;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 100px;
+                font-size: 1.6rem;
+                min-height: 60px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                text-align: center;
+            }
+            .kit-badge {
+                top: 12px;
+                right: 12px;
+                padding: 0.4rem 1rem;
+                font-size: 0.8rem;
+                max-width: 110px;
+            }
+            .price-tag {
+                font-size: 2.5rem;
+            }
+            .feature-card {
+                padding: 2rem 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+            .feature-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+            .card-body ul li {
+                font-size: 0.95rem;
+                margin-bottom: 0.3rem;
+            }
+            #courses .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            #courses .col-lg-6 {
+                width: 100%;
+                max-width: 500px;
+                padding: 0 15px;
+            }
+            #kits .row.justify-content-center {
+                flex-direction: column;
+                align-items: center;
+            }
+            #kits .col-lg-5 {
+                width: 100%;
+                max-width: 400px;
+                padding: 0 15px;
+            }
+            .contact-container {
+                padding: 2rem 1.5rem;
+            }
+            .contact-info h3,
+            .contact-form h3 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .contact-info h3::after,
+            .contact-form h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            .contact-details h4 {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            .contact-details p {
+                font-size: 0.95rem;
+                text-align: center;
+            }
+            .form-control-custom {
+                padding: 0.9rem 1rem;
+                font-size: 0.95rem;
+            }
+            .form-label {
+                font-size: 0.95rem;
+            }
+            .contact-form .row {
+                margin: 0;
+            }
+            .contact-form .col-md-6 {
+                padding: 0;
+            }
+            .footer {
+                padding: 3rem 0 1.5rem;
+                text-align: left;
+            }
+            .footer-brand {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: left;
+                margin-bottom: 2rem;
+                flex-direction: row;
+            }
+            .footer-brand-logo {
+                height: 200px;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .footer-brand-text {
+                font-size: 1.8rem;
+                font-weight: 900;
+                line-height: 1.2;
+                text-align: left;
+            }
+            .footer-brand-text span {
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            .footer > .container > .row > .col-lg-4 > p {
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            .footer > .container > .row > .col-lg-4 > div {
+                text-align: left;
+            }
+            .footer-links {
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+            .footer-links h5 {
+                text-align: left;
+            }
+            .footer-links h5::after {
+                left: 0;
+                transform: none;
+            }
+            .social-icon {
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .cart-notification {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                max-width: none;
+                text-align: center;
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+            .footer .row > div {
+                margin-bottom: 2rem;
+            }
+            .footer .row > div:last-child {
+                margin-bottom: 0;
+            }
+            .footer .text-md-start,
+            .footer .text-md-end {
+                text-align: left !important;
+            }
+            .footer-links ul li {
+                text-align: left;
+            }
+            .footer-links ul li a {
+                text-align: left;
+                display: inline-block;
+            }
+            .footer .row:last-child {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .footer .row:last-child .col-md-6 {
+                text-align: center !important;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .footer .row:last-child .col-md-6:last-child {
+                margin-bottom: 0;
+            }
+            .footer .row:last-child p {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .company-logo {
+                height: 45px;
+                margin-right: 8px;
+            }
+            .brand-line-1 {
+                font-size: 0.9rem;
+            }
+            .brand-line-2 {
+                font-size: 0.8rem;
+            }
+            .video-container {
+                height: auto;
+            }
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            .section-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .stat-card {
+                padding: 1rem;
+                min-height: 130px;
+            }
+            .stat-number {
+                font-size: 2rem;
+                margin-bottom: 0.4rem;
+            }
+            .stat-card h5 {
+                font-size: 0.85rem;
+                line-height: 1.2;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 85px;
+                font-size: 1.5rem;
+                min-height: 55px;
+            }
+            .footer-brand-logo {
+                height: 200px;
+            }
+            .footer-brand-text {
+                font-size: 1.8rem;
+            }
+            .footer-brand-text span {
+                font-size: 1.6rem;
+            }
+            .kit-feature {
+                font-size: 0.9rem;
+            }
+            #cart-section .d-flex {
+                flex-direction: column;
+            }
+            #cart-section .d-flex > div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            #cart-section .d-flex .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            .company-logo {
+                height: 40px;
+                margin-right: 6px;
+            }
+            .brand-line-1 {
+                font-size: 0.85rem;
+            }
+            .brand-line-2 {
+                font-size: 0.75rem;
+            }
+            .video-container {
+                height: auto;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            .stat-card {
+                padding: 0.8rem;
+                min-height: 120px;
+            }
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            .stat-card h5 {
+                font-size: 0.8rem;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 75px;
+                font-size: 1.4rem;
+                min-height: 50px;
+            }
+            .kit-badge {
+                max-width: 90px;
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+                top: 10px;
+                right: 10px;
+            }
+            .footer-brand-logo {
+                height: 200px;
+            }
+            .footer-brand-text {
+                font-size: 1.8rem;
+            }
+            .footer-brand-text span {
+                font-size: 1.6rem;
+            }
+            .btn-primary-custom, .btn-secondary-custom {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.95rem;
+            }
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.7rem 0.9rem !important;
+            }
+        }
+        
+        @media (min-width: 577px) and (max-width: 768px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .video-container {
+                height: auto;
+            }
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+            .stat-card {
+                padding: 1.5rem;
+                min-height: 150px;
+            }
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            .stat-card h5 {
+                font-size: 1rem;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 100px;
+                font-size: 1.7rem;
+            }
+            .d-flex.flex-wrap.gap-3 {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .btn-primary-custom, .btn-secondary-custom {
+                width: auto;
+                min-width: 200px;
+            }
+        }
+        
+        @media (max-width: 1400px) {
+            .company-logo {
+                height: 80px;
+            }
+            .video-container {
+                height: auto;
+                max-width: 550px;
+            }
+            .footer-brand-logo {
+                height: 130px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .company-logo {
+                height: 75px;
+            }
+            .video-container {
+                height: auto;
+                max-width: 500px;
+            }
+            .footer-brand-logo {
+                height: 120px;
+            }
+            .section-title h2 {
+                font-size: 2.8rem;
+            }
+            .hero-title {
+                font-size: 3.2rem;
+            }
+        }
+        
+        @media (max-height: 600px) and (orientation: landscape) {
+            .hero-section {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 60px;
+            }
+            .video-container {
+                height: auto;
+            }
+            .company-logo {
+                height: 55px;
+            }
+            .footer-brand-logo {
+                height: 100px;
+            }
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .hero-subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+            .stat-card {
+                padding: 0.8rem;
+                min-height: 110px;
+            }
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            .stat-card h5 {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (hover: none) and (pointer: coarse) {
+            .card-custom:hover {
+                transform: none;
+                border-color: rgba(255, 107, 0, 0.2);
+                box-shadow: none;
+            }
+            .card-custom:active {
+                transform: scale(0.98);
+                border-color: var(--accent-orange);
+                box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+            }
+            .feature-card:hover,
+            .stat-card:hover {
+                transform: none;
+                border-color: rgba(255, 107, 0, 0.1);
+                box-shadow: none;
+            }
+            .feature-card:active,
+            .stat-card:active {
+                transform: scale(0.98);
+                border-color: var(--accent-orange);
+                box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+            }
+            .nav-link:hover::after {
+                width: 0;
+            }
+            .btn-primary-custom:hover,
+            .btn-secondary-custom:hover,
+            .demo-nav-btn:hover {
+                transform: none;
+            }
+            .btn-primary-custom:active,
+            .btn-secondary-custom:active,
+            .demo-nav-btn:active {
+                transform: scale(0.98);
+            }
+        }
+        
+        .btn-primary-custom,
+        .btn-secondary-custom,
+        .demo-nav-btn {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-link,
+            .demo-nav-btn,
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                touch-action: manipulation;
+            }
+            .social-icon {
+                width: 44px;
+                height: 44px;
+                min-height: 44px;
+            }
+            .kit-badge,
+            .hero-badge {
+                min-height: 36px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .navbar-nav .nav-item {
+                margin: 0;
+                width: 100%;
+            }
+        }
+        
+        @supports (-webkit-touch-callout: none) {
+            .hero-section {
+                min-height: -webkit-fill-available;
+            }
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        h1, h2, h3, h4, h5, h6, p {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+        
+        /* ============ WORKSHOP PAGE SPECIFIC STYLES ============ */
+        .workshop-hero {
+            padding: 160px 0 80px;
+            background: radial-gradient(circle at 30% 30%, rgba(255,107,0,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 70%, rgba(0,243,255,0.1) 0%, transparent 50%);
+        }
+        
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255,255,255,0.03);
+            border: 1px dashed var(--accent-orange);
+            border-radius: 60px;
+            padding: 0.6rem 2rem;
+            margin: 2rem 0 1rem;
+            font-size: 1.2rem;
+            color: var(--accent-yellow);
+        }
+        
+        .trust-badge i {
+            margin-right: 10px;
+            color: var(--accent-orange);
+        }
+        
+        .workshop-offering-card {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            border-radius: 20px;
+            height: 100%;
+            transition: all 0.4s ease;
+        }
+        
+        .workshop-offering-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
+        }
+        
+        .offering-icon {
+            width: 90px;
+            height: 90px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .testimonial-card-small {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid var(--accent-orange);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-card-small i {
+            color: var(--accent-yellow);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* New CTA Section */
+        .cta-section {
+            background: linear-gradient(145deg, var(--tertiary-dark) 0%, var(--secondary-dark) 100%);
+            border-radius: 40px;
+            padding: 4rem 2rem;
+            border: 1px solid rgba(255,107,0,0.2);
+            margin: 2rem 0;
+            transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+        }
+        
+        .cta-section:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-orange);
+            box-shadow: 0 30px 60px rgba(255,107,0,0.25);
+        }
+        
+        .cta-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-urgency {
+            margin-top: 2rem;
+            color: var(--accent-yellow);
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        /* Appointment Booking Styles */
+        .booking-steps-workshop {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .booking-steps-workshop::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gradient-primary);
+            z-index: 1;
+        }
+        
+        .step-workshop {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            flex: 1;
+        }
+        
+        .step-icon-workshop {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+        
+        .booking-label {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            margin-bottom: 1rem;
+        }
+
+        .calendar-wrapper {
+            background: rgba(26, 26, 36, 0.9);
+            border: 1px solid rgba(255, 107, 0, 0.4);
+            border-radius: 20px;
+            padding: 3rem 3rem 2.5rem;
+            margin-top: 1rem;
+        }
+
+        .calendar-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+        }
+
+        .calendar-month {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            margin: 0;
+        }
+
+        .calendar-nav {
+            position: absolute;
+            right: 0;
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .nav-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 107, 0, 0.4);
+            background: transparent;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-btn:hover {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+        }
+
+        .quick-select-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin: 2rem 0;
+        }
+
+        .quick-btn {
+            padding: 0.8rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 107, 0, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-light);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .quick-btn:hover {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+        }
+
+        .quick-btn.selected {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            border-color: transparent;
+        }
+
+        .days-row {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            margin-bottom: 1rem;
+            text-align: center;
+            color: var(--accent-yellow);
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1.2rem;
+        }
+
+        .day {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid transparent;
+        }
+
+        .day.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .day:hover:not(.disabled) {
+            background: rgba(255, 107, 0, 0.15);
+        }
+
+        .day.selected {
+            border: 1px solid var(--accent-orange);
+            background: rgba(255, 107, 0, 0.1);
+        }
+
+        .time-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .time-btn {
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid rgba(255, 107, 0, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .time-btn:hover {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+        }
+
+        .time-btn.selected {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            border-color: transparent;
+        }
+
+        .time-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            text-decoration: line-through;
+        }
+
+        /* Responsive adjustments for new layout */
+        @media (max-width: 768px) {
+            .calendar-wrapper {
+                padding: 1.5rem;
+            }
+            .calendar-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .calendar-nav {
+                position: static;
+            }
+            .quick-select-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .time-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-robot"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Floating Elements -->
+    <div class="floating-element" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+    <div class="floating-element" style="width: 200px; height: 200px; top: 60%; right: 10%;"></div>
+    <div class="floating-element" style="width: 250px; height: 250px; bottom: 10%; left: 15%;"></div>
+    <div class="floating-element" style="width: 150px; height: 150px; top: 20%; right: 20%;"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo-font" href="index.html">
+                <img src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/5dad4093-d51e-42cf-8e14-fea12d2acb7d%20(1)-Picsart-AiImageEnhancer-artguru%20(1).png" 
+                     alt="KalkiOrion Robotics Lab Logo" class="company-logo">
+                <div class="brand-text">
+                    <span class="brand-line-1">KALKIORION</span>
+                    <span class="brand-line-2">ROBOTICS LABS</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kits">Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progressreport.html">Progress Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="workshop.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- Additional items for mobile/tablet only -->
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="certifications&competitions.html">Certifications & Competitions</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="csrgovernment.html">CSR / Government</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="privacypolicy.html">Privacy & Policy</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="refundpolicy.html">Refund Policy</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="terms&conditions.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="demo-nav-btn" href="demo.html">
+                            <i class="fas fa-calendar-alt me-2"></i>Book Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Workshop -->
+    <section class="workshop-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <div class="hero-badge">
+                        <i class="fas fa-chalkboard-teacher me-2"></i>Exclusive for Schools & Institutes
+                    </div>
+                    <h1 class="hero-title">Bring Future Ready<br> Robotics Labs to<br><span class="text-warning">Your Schools & Institutions</span></h1>
+                    <p class="hero-subtitle">
+                        Transform your students into creators with India’s first QR‑verified robotics infrastructure. 
+                        Reusable kits, measurable outcomes, and a clear pathway from classroom to national competitions.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#bookingForm" class="btn btn-primary-custom">
+                            <i class="fas fa-calendar-check me-2"></i>Book Appointment
+                        </a>
+                        <a href="#" class="btn btn-secondary-custom" id="syllabusDownloadBtn">
+                            <i class="fas fa-download me-2"></i>Download Syllabus
+                        </a>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i> Trusted By Multiple Industries
+                    </div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                    <div class="card-custom p-4">
+                        <h3 class="text-warning mb-3">Why Should Choose Us</h3>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                            <span><strong>QR‑Verified certificates</strong> – Tamper‑Proof Of Learning</span>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                            <span><strong>Reusable kits</strong> – 1 kit = 15+ Projects, works For Years</span>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                            <span><strong>Inspection‑Ready Dashboards</strong> – Real‑Time Student KPIs</span>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                            <span><strong>Competition Ladder</strong> – Intra → District → State → National</span>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                            <span><strong>Low Annual Renewal</strong> – predictable budgeting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <h5>Partner<br>Schools</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <h5>Students<br>Empowered</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <h5>Projects<br>Delivered</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <h5>Inspection<br>Ready</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Our <span class="text-warning">Workshop</span> Offerings</h2>
+                </div>
+                <p class="section-subtitle">Customised programs for Schools & Institutions, from a single demo to a full‑fledged innovation lab.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="workshop-offering-card">
+                        <div class="offering-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4 class="text-warning">Introductory Workshop</h4>
+                        <p class="mb-3">2‑hour hands‑on session for students & teachers. Includes live project demo and Q&A.</p>
+                        <span class="badge bg-warning text-dark">Free of Cost</span>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="workshop-offering-card">
+                        <div class="offering-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <h4 class="text-warning">Full‑Year Program</h4>
+                        <p class="mb-3">Weekly robotics classes with our curriculum, kits, training, and competition access.</p>
+                        <span class="badge bg-warning text-dark">Most popular</span>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="workshop-offering-card">
+                        <div class="offering-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 class="text-warning">Infrastructure</h4>
+                        <p class="mb-3">We provide Infrastructure instead of expensive robotics lab with kits, training Sessions, dashboard and competitions</p>
+                        <span class="badge bg-warning text-dark">CSR ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section bg-secondary-dark">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>What <span class="text-warning">People</span> Says</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="testimonial-card-small">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="fst-italic">“KalkiOrion transformed our computer lab into a buzzing innovation hub. Parents are thrilled to see QR‑verified certificates – real proof of learning.”</p>
+                        <p class="text-warning mb-0">— Mrs. Shalini Mehra, Teacher</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card-small">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="fst-italic">“The annual model and reusable kits made budgeting predictable. Our students won district level robotics championship in the first year itself.”</p>
+                        <p class="text-warning mb-0">— Mr. Ravi Shankar, Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New CTA Section (Ready to Start Your Robotics Journey?) -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section text-center" data-aos="zoom-in">
+                <h2 class="cta-title">Ready to Start Your Robotics Journey?</h2>
+                <p class="cta-subtitle">Get The Complete Syllabus In PDF Or Book A Free Demo Session With Our Mentors.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary-custom" id="syllabusDownloadBtn2">
+                        <i class="fas fa-download me-2"></i>Download Syllabus PDF
+                    </a>
+                    <a href="#bookingForm" class="btn btn-secondary-custom">
+                        <i class="fas fa-calendar-alt me-2"></i>Book Demo
+                    </a>
+                </div>
+                <div class="cta-urgency">
+                    <i class="fas fa-exclamation-circle me-2"></i> So, Join Us Now.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Form - EXACT MATCH TO IMAGES -->
+    <section id="bookingForm" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Book an <span class="text-warning">Appointment</span></h2>
+                </div>
+                <p class="section-subtitle">Meet our team to discuss how we can customise a program for your institution.</p>
+            </div>
+
+            <!-- Steps indicator -->
+            <div class="booking-steps-workshop mb-4">
+                <div class="step-workshop">
+                    <div class="step-icon-workshop"><i class="fas fa-school"></i></div>
+                    <h6>Institution Details</h6>
+                </div>
+                <div class="step-workshop">
+                    <div class="step-icon-workshop"><i class="fas fa-calendar-alt"></i></div>
+                    <h6>Schedule</h6>
+                </div>
+                <div class="step-workshop">
+                    <div class="step-icon-workshop"><i class="fas fa-check-circle"></i></div>
+                    <h6>Confirm</h6>
+                </div>
+            </div>
+
+            <div class="booking-container" data-aos="fade-up">
+                <div id="formStatus" class="form-status info">
+                    <i class="fas fa-info-circle me-2"></i>Please fill all fields to schedule a meeting.
+                </div>
+                <form id="workshopBookingForm">
+                    <!-- Step 1: Institution Info -->
+                    <div id="step1Form" class="form-step">
+                        <h3 class="text-warning mb-4"><i class="fas fa-school me-2"></i>Institution Information</h3>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Institution Name *</label>
+                                <input type="text" id="schoolName" class="form-control form-control-custom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Principal/Coordinator Name *</label>
+                                <input type="text" id="contactName" class="form-control form-control-custom" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email *</label>
+                                <input type="email" id="email" class="form-control form-control-custom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Phone *</label>
+                                <input type="tel" id="phone" class="form-control form-control-custom" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">City *</label>
+                                <input type="text" id="city" class="form-control form-control-custom" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Preferred Program *</label>
+                                <select id="program" class="form-select form-select-custom" required>
+                                    <option value="" selected disabled>Select</option>
+                                    <option value="intro">Introductory Workshop</option>
+                                    <option value="full">Full‑Year Program</option>
+                                    <option value="lab">Innovation Lab Setup</option>
+                                    <option value="custom">Custom / Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div></div>
+                            <button type="button" class="btn btn-primary-custom" onclick="nextStep(2)">Next <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Date & Time - EXACT MATCH TO IMAGES -->
+                    <div id="step2Form" class="form-step" style="display: none;">
+                        <h3 class="text-warning mb-4"><i class="fas fa-calendar-alt me-2"></i>Select Date & Time</h3>
+                        
+                        <!-- Preferred Date -->
+                        <h5 class="booking-label">Preferred Date *</h5>
+
+                        <div class="calendar-wrapper">
+                            <!-- Month Header -->
+                            <div class="calendar-top">
+                                <h4 class="calendar-month" id="currentMonthYear">February 2026</h4>
+                                <div class="calendar-nav">
+                                    <button type="button" class="nav-btn" onclick="changeMonth(-1)"><i class="fas fa-chevron-left"></i></button>
+                                    <button type="button" class="nav-btn" onclick="changeMonth(1)"><i class="fas fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Quick Buttons -->
+                            <div class="quick-select-row">
+                                <button type="button" class="quick-btn" onclick="selectQuickDate('today', this)">Today</button>
+                                <button type="button" class="quick-btn" onclick="selectQuickDate('tomorrow', this)">Tomorrow</button>
+                                <button type="button" class="quick-btn" onclick="selectQuickDate('thisWeek', this)">This Week</button>
+                                <button type="button" class="quick-btn" onclick="selectQuickDate('nextWeek', this)">Next Week</button>
+                            </div>
+
+                            <!-- Days of week -->
+                            <div class="days-row">
+                                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                            </div>
+
+                            <!-- Calendar Grid (populated by JS) -->
+                            <div class="calendar-grid" id="calendarGrid"></div>
+                        </div>
+                        <input type="hidden" id="selectedDate" name="selectedDate">
+
+                        <!-- Preferred Time Slot -->
+                        <h5 class="booking-label mt-5">Preferred Time Slot *</h5>
+                        <div class="time-grid">
+                            <div class="time-btn" onclick="selectTimeSlot('09:00 AM', this)">09:00 AM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('10:30 AM', this)">10:30 AM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('12:00 PM', this)">12:00 PM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('02:00 PM', this)">02:00 PM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('03:30 PM', this)">03:30 PM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('05:00 PM', this)">05:00 PM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('06:30 PM', this)">06:30 PM</div>
+                            <div class="time-btn" onclick="selectTimeSlot('08:00 PM', this)">08:00 PM</div>
+                        </div>
+                        <input type="hidden" id="selectedTime" name="selectedTime">
+
+                        <div class="mb-4">
+                            <label class="form-label">Message (optional)</label>
+                            <textarea id="message" class="form-control form-control-custom" rows="2" placeholder="Any specific requirements..."></textarea>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary-custom" onclick="prevStep(1)"><i class="fas fa-arrow-left me-2"></i>Back</button>
+                            <button type="button" class="btn btn-primary-custom" onclick="nextStep(3)">Next <i class="fas fa-arrow-right ms-2"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Confirm & Submit -->
+                    <div id="step3Form" class="form-step" style="display: none;">
+                        <h3 class="text-warning mb-4"><i class="fas fa-check-circle me-2"></i>Confirm Details</h3>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="card-custom p-3">
+                                    <h5 class="text-warning">Institution Info</h5>
+                                    <p><strong>Institution:</strong> <span id="reviewSchool">-</span></p>
+                                    <p><strong>Name:</strong> <span id="reviewName">-</span></p>
+                                    <p><strong>Email:</strong> <span id="reviewEmail">-</span></p>
+                                    <p><strong>Phone:</strong> <span id="reviewPhone">-</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-custom p-3">
+                                    <h5 class="text-warning">Appointment</h5>
+                                    <p><strong>Date:</strong> <span id="reviewDate">-</span></p>
+                                    <p><strong>Time:</strong> <span id="reviewTime">-</span></p>
+                                    <p><strong>Program:</strong> <span id="reviewProgram">-</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                I agree to the <a href="terms&conditions.html" class="text-warning">Terms & Conditions</a> and consent to being contacted.
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-secondary-custom" onclick="prevStep(2)"><i class="fas fa-arrow-left me-2"></i>Back</button>
+                            <button type="submit" class="btn btn-primary-custom"><i class="fas fa-paper-plane me-2"></i>Book Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a href="index.html" class="footer-brand">
+                        <img src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/5dad4093-d51e-42cf-8e14-fea12d2acb7d%20(1)-Picsart-AiImageEnhancer-artguru%20(1).png" 
+                             alt="KalkiOrion Robotics Lab Logo" class="footer-brand-logo">
+                        <div class="footer-brand-text">
+                            KALKIORION<br>
+                            <span>ROBOTICS LABS</span>
+                        </div>
+                    </a>
+                    <p class="mb-4">Empowering students with hands-on learning in Robotics, Python, and Artificial Intelligence through project-based training and mentorship.</p>
+                    <div class="text-md-start">
+                        <a href="https://www.facebook.com/profile.php?id=61588278818643" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/kalkiorionrobot" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kalkiorionroboticslabs/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/kalki-orion-robotics-labs/" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kalkiorionroboticslabs?si=VKiubulxP-po81W3" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="progressreport.html">Progress Report</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="certifications&competitions.html">Certifications & Competitions</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="workshop.html">Workshop</a></li>
+                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                            <li><a href="demo.html">Book Demo</a></li>
+                            <li><a href="csrgovernment.html">CSR / Government</a></li>
+                            <li><a href="privacypolicy.html">Privacy & Policy</a></li>
+                            <li><a href="refundpolicy.html">Refund Policy</a></li>
+                            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Our Courses</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#courses">Robotics Mastery</a></li>
+                            <li><a href="index.html#courses">Python & AI</a></li>
+                            <li><a href="index.html#courses">3D Modeling</a></li>
+                            <li><a href="index.html#courses">Web Development</a></li>
+                            <li><a href="index.html#courses">Data Analytics</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-warning"></i>DLF Phase 5, Golf Course Road, Sector 43, Gurugram, India</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2 text-warning"></i>+91 9315847513</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2 text-warning"></i>+91 8076401469</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2 text-warning"></i>info@kalkiorionroboticslabs.in</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-4" style="border-color: rgba(255, 107, 0, 0.3);">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2026 KalkiOrion Robotics Labs. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Designed with <i class="fas fa-heart text-danger"></i> for the future innovators</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+
+        // Particles.js
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: ["#ff6b00", "#ffc107", "#00f3ff", "#9d4edd"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff6b00",
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                }
+            }
+        });
+
+        // Hide loading overlay
+        window.addEventListener('load', function() {
+            setTimeout(() => document.getElementById('loadingOverlay').classList.add('hidden'), 1500);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Download syllabus function
+        function downloadSyllabus() {
+            const url = 'https://github.com/kalkiorionroboticslabs/RoboticsSyllabus_PDF/raw/main/RoboticsSyllabus.pdf';
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'KalkiOrion_Robotics_Syllabus.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Attach download handlers for syllabus buttons
+        document.getElementById('syllabusDownloadBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            downloadSyllabus();
+        });
+        document.getElementById('syllabusDownloadBtn2').addEventListener('click', function(e) {
+            e.preventDefault();
+            downloadSyllabus();
+        });
+
+        // ===== FORM STEP MANAGEMENT =====
+        let currentStep = 1;
+        let selectedDate = '', selectedTime = '';
+
+        function nextStep(step) {
+            if (step === 2 && !validateStep1()) return;
+            if (step === 3 && !validateStep2()) return;
+            document.getElementById(`step${currentStep}Form`).style.display = 'none';
+            document.getElementById(`step${step}Form`).style.display = 'block';
+            if (step === 2) updateReviewStep1();
+            if (step === 3) updateReviewStep2();
+            currentStep = step;
+        }
+
+        function prevStep(step) {
+            document.getElementById(`step${currentStep}Form`).style.display = 'none';
+            document.getElementById(`step${step}Form`).style.display = 'block';
+            currentStep = step;
+        }
+
+        function validateStep1() {
+            const fields = ['schoolName', 'contactName', 'email', 'phone', 'city', 'program'];
+            for (let id of fields) {
+                if (!document.getElementById(id).value.trim()) {
+                    showFormStatus('Please fill all required fields.', 'error');
+                    return false;
+                }
+            }
+            const email = document.getElementById('email').value;
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                showFormStatus('Enter a valid email address.', 'error');
+                return false;
+            }
+            return true;
+        }
+
+        function validateStep2() {
+            if (!selectedDate || !selectedTime) {
+                showFormStatus('Please select a date and time slot.', 'error');
+                return false;
+            }
+            return true;
+        }
+
+        function updateReviewStep1() {
+            document.getElementById('reviewSchool').innerText = document.getElementById('schoolName').value;
+            document.getElementById('reviewName').innerText = document.getElementById('contactName').value;
+            document.getElementById('reviewEmail').innerText = document.getElementById('email').value;
+            document.getElementById('reviewPhone').innerText = document.getElementById('phone').value;
+            const progSelect = document.getElementById('program');
+            document.getElementById('reviewProgram').innerText = progSelect.options[progSelect.selectedIndex].text;
+        }
+
+        function updateReviewStep2() {
+            const dateObj = new Date(selectedDate);
+            document.getElementById('reviewDate').innerText = dateObj.toLocaleDateString('en-IN', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+            document.getElementById('reviewTime').innerText = selectedTime;
+        }
+
+        function showFormStatus(msg, type) {
+            const status = document.getElementById('formStatus');
+            status.innerText = msg;
+            status.className = `form-status ${type}`;
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            setTimeout(() => {
+                status.innerText = 'Please fill all fields to schedule a meeting.';
+                status.className = 'form-status info';
+            }, 5000);
+        }
+
+        // ========== DATE PICKER LOGIC ==========
+        let currentMonth = 1; // February (0 = January)
+        let currentYear = 2026;
+        const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        function renderCalendar() {
+            const grid = document.getElementById('calendarGrid');
+            const monthYear = document.getElementById('currentMonthYear');
+            monthYear.innerText = monthNames[currentMonth] + ' ' + currentYear;
+
+            const firstDay = new Date(currentYear, currentMonth, 1).getDay();
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+            const today = new Date(); today.setHours(0,0,0,0);
+
+            let html = '';
+            for (let i = 0; i < firstDay; i++) html += '<div class="day disabled"></div>';
+            for (let d = 1; d <= daysInMonth; d++) {
+                const dateStr = `${currentYear}-${String(currentMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+                const cellDate = new Date(currentYear, currentMonth, d);
+                let classes = 'day';
+                if (cellDate < today) classes += ' disabled';
+                if (dateStr === selectedDate) classes += ' selected';
+                html += `<div class="${classes}" data-date="${dateStr}" onclick="selectDate('${dateStr}', this)">${d}</div>`;
+            }
+            grid.innerHTML = html;
+        }
+
+        function changeMonth(delta) {
+            currentMonth += delta;
+            if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+            else if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+            renderCalendar();
+        }
+
+        function selectDate(date, element) {
+            if (element.classList.contains('disabled')) return;
+            selectedDate = date;
+            document.getElementById('selectedDate').value = date;
+            document.querySelectorAll('.day').forEach(day => day.classList.remove('selected'));
+            element.classList.add('selected');
+            // Update time slots based on day of week
+            const d = new Date(date);
+            updateTimeSlots(d.getDay());
+        }
+
+        function selectQuickDate(type, btn) {
+            const today = new Date();
+            let target = new Date();
+            if (type === 'today') target = today;
+            else if (type === 'tomorrow') target.setDate(today.getDate() + 1);
+            else if (type === 'thisWeek') {
+                const dayOfWeek = today.getDay();
+                if (dayOfWeek >= 5) {
+                    target.setDate(today.getDate() + (8 - dayOfWeek));
+                } else {
+                    target.setDate(today.getDate() + 1);
+                }
+            } else if (type === 'nextWeek') {
+                target.setDate(today.getDate() + 7);
+            }
+            const year = target.getFullYear();
+            const month = target.getMonth();
+            const day = target.getDate();
+            const dateStr = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+            if (currentMonth !== month || currentYear !== year) {
+                currentMonth = month;
+                currentYear = year;
+                renderCalendar();
+            }
+            // Find and click the corresponding day element
+            const dayElement = document.querySelector(`.day[data-date="${dateStr}"]`);
+            if (dayElement && !dayElement.classList.contains('disabled')) {
+                selectDate(dateStr, dayElement);
+            }
+            // Highlight clicked quick button
+            document.querySelectorAll('.quick-btn').forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+        }
+
+        function selectTimeSlot(time, btn) {
+            if (btn.classList.contains('disabled')) return;
+            selectedTime = time;
+            document.getElementById('selectedTime').value = time;
+            document.querySelectorAll('.time-btn').forEach(slot => slot.classList.remove('selected'));
+            btn.classList.add('selected');
+        }
+
+        function updateTimeSlots(dayOfWeek) {
+            const timeSlots = document.querySelectorAll('.time-btn');
+            const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+            timeSlots.forEach(slot => {
+                if (isWeekend && (slot.textContent.includes('06:30') || slot.textContent.includes('08:00'))) {
+                    slot.classList.add('disabled');
+                } else {
+                    slot.classList.remove('disabled');
+                }
+            });
+        }
+
+        // ===== GOOGLE SHEETS INTEGRATION =====
+        const WORKSHOP_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyIBdPdGUYQqug13gs7KOv7Fqjn162VLOjelD2hgrEKUFrlcF_NQaoPJL6DnbMtTCuWGw/exec';
+
+        document.getElementById('workshopBookingForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            if (!document.getElementById('agreeTerms').checked) {
+                showFormStatus('Please accept the Terms & Conditions.', 'error');
+                return;
+            }
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const original = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+            submitBtn.disabled = true;
+
+            const formData = {
+                schoolName: document.getElementById('schoolName').value,
+                contactName: document.getElementById('contactName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value,
+                program: document.getElementById('program').value,
+                date: selectedDate,
+                time: selectedTime,
+                message: document.getElementById('message').value
+            };
+
+            try {
+                await fetch(WORKSHOP_WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                showFormStatus('Appointment request sent! We will contact you within 24 hours.', 'success');
+                
+                // Reset form
+                document.getElementById('workshopBookingForm').reset();
+                selectedDate = ''; selectedTime = '';
+                document.getElementById('step1Form').style.display = 'block';
+                document.getElementById('step2Form').style.display = 'none';
+                document.getElementById('step3Form').style.display = 'none';
+                currentStep = 1;
+                // Reset calendar to February 2026
+                currentMonth = 1;
+                currentYear = 2026;
+                renderCalendar();
+
+            } catch (err) {
+                showFormStatus('Network error. Check your connection.', 'error');
+                console.error(err);
+            } finally {
+                submitBtn.innerHTML = original;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Initialize calendar on page load
+        window.addEventListener('load', function() {
+            renderCalendar();
+        });
+    </script>
+</body>
+</html>

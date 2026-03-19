@@ -1,0 +1,2678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png?v=10" type="image/png">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo.png?v=10">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo.png?v=10">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png?v=10">
+    <title>KalkiOrion Robotics Labs | Privacy Policy</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <style>
+        /* ------------------------------------------------------------
+           COMPLETE STYLESHEET – EXACT COPY FROM INDEX.HTML
+        ------------------------------------------------------------ */
+        :root {
+            --primary-dark: #0a0a0f;
+            --secondary-dark: #12121a;
+            --tertiary-dark: #1a1a24;
+            --accent-orange: #ff6b00;
+            --accent-orange-light: #ff8c42;
+            --accent-yellow: #ffc107;
+            --accent-yellow-light: #ffdd40;
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d4edd;
+            --text-light: #f0f0f0;
+            --text-muted: #a0a0b0;
+            --gradient-primary: linear-gradient(135deg, #ff6b00 0%, #ffc107 100%);
+            --gradient-secondary: linear-gradient(135deg, #00f3ff 0%, #9d4edd 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+        }
+        
+        .logo-font {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        
+        /* Particle Background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: 6px;
+        }
+        
+        /* Navigation - Futuristic Glass Effect */
+        .navbar {
+            background: rgba(10, 10, 15, 0.98);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.3rem 0;
+            background: rgba(10, 10, 15, 0.99);
+            box-shadow: 0 5px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .navbar-brand {
+            font-size: 1.4rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            padding: 0;
+        }
+        
+        .navbar-brand span {
+            font-size: 1.4rem;
+        }
+        
+        /* Company Logo in Navbar */
+        .company-logo {
+            height: 90px;
+            margin-right: 15px;
+            filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.5));
+            transition: transform 0.3s ease;
+        }
+        
+        .navbar-brand:hover .company-logo {
+            transform: scale(1.05) rotate(0deg);
+        }
+        
+        .navbar-nav {
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-light) !important;
+            margin: 0 0.3rem;
+            font-weight: 500;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0.8rem !important;
+            white-space: nowrap;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .nav-link:hover::after {
+            width: 70%;
+        }
+        
+        .nav-link.active {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .nav-link.active::after {
+            width: 70%;
+        }
+        
+        .navbar-toggler {
+            border: 1px solid var(--accent-orange);
+            padding: 0.25rem 0.5rem;
+            margin-left: auto;
+            order: 2;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.5);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 107, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        /* Demo Button in Nav */
+        .demo-nav-btn {
+            background: var(--gradient-secondary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .demo-nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 243, 255, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        /*  Name Text Styling */
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .brand-line-1 {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+        
+        .brand-line-2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        
+        /* Hero Section - (adapted for privacy policy) */
+        .hero-section {
+            min-height: auto;
+            padding: 140px 0 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 107, 0, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 243, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-yellow), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: textShine 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes textShine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .hero-subtitle::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: var(--gradient-primary);
+            border-radius: 3px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3); }
+            50% { transform: scale(1.05); box-shadow: 0 8px 25px rgba(255, 107, 0, 0.5); }
+            100% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3); }
+        }
+        
+        /* Video Styling (retained but not used) */
+        .hero-video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            border: 3px solid var(--accent-orange);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            max-width: 650px;
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 107, 0, 0.1), rgba(0, 243, 255, 0.1));
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .btn-primary-custom {
+            background: var(--gradient-primary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 5px 20px rgba(255, 107, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        
+        .btn-primary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        .btn-primary-custom:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary-custom {
+            background: transparent;
+            border: 2px solid var(--accent-orange);
+            color: var(--accent-yellow);
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        
+        .btn-secondary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--gradient-primary);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+        
+        .btn-secondary-custom:hover {
+            color: var(--primary-dark);
+            border-color: transparent;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+        }
+        
+        .btn-secondary-custom:hover::before {
+            width: 100%;
+        }
+        
+        /* New hero elements (adapted) */
+        .glowing-subheading {
+            display: inline-block;
+            background: rgba(255, 107, 0, 0.1);
+            border: 2px solid var(--accent-orange);
+            border-radius: 50px;
+            padding: 0.7rem 1.5rem;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--accent-yellow);
+            box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3);
+            text-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
+            animation: glowPulse 2s infinite alternate;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            width: auto;
+            max-width: 100%;
+            text-align: center;
+        }
+        
+        @keyframes glowPulse {
+            from { box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3); }
+            to { box-shadow: 0 0 15px rgba(255, 107, 0, 0.8), 0 0 30px rgba(255, 107, 0, 0.5); }
+        }
+        
+        .project-showcase {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem 0;
+            padding: 0.5rem 1rem;
+            border-left: 5px solid var(--accent-orange);
+            background-color: rgba(255, 107, 0, 0.05);
+            border-radius: 0 10px 10px 0;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Feature pills */
+        .feature-pill {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: rgba(26, 26, 36, 0.7);
+            border: 1px solid rgba(255, 107, 0, 0.3);
+            border-radius: 50px;
+            padding: 0.6rem 1.2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            cursor: default;
+            font-family: 'Rajdhani', sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            min-height: 60px;
+        }
+        
+        .feature-pill:hover {
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.5);
+            transform: translateY(-3px);
+            background: rgba(26, 26, 36, 0.9);
+        }
+        
+        /* Section Styling */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 4rem;
+            display: inline-block;
+        }
+        
+        .section-title h2 {
+            font-size: 3rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+            top: -30px;
+            left: -30px;
+            z-index: 1;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+        
+        /* Cards - Futuristic Glass Morphism */
+        .card-custom {
+            background: rgba(26, 26, 36, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+            z-index: 2;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
+        }
+        
+        .card-header-custom {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 2rem;
+            border-bottom: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header-custom::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .course-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: rgba(10, 10, 15, 0.3);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        .price-tag {
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+        }
+        
+        /* Floating Elements Animation */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--neon-blue) 0%, transparent 70%);
+            opacity: 0.1;
+            z-index: -1;
+            animation: float 20s infinite linear;
+        }
+        
+        .floating-element:nth-child(2n) {
+            background: radial-gradient(circle, var(--accent-orange) 0%, transparent 70%);
+            animation-direction: reverse;
+            animation-duration: 25s;
+        }
+        
+        .floating-element:nth-child(3n) {
+            background: radial-gradient(circle, var(--neon-purple) 0%, transparent 70%);
+            animation-duration: 30s;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -50px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: radial-gradient(ellipse at center, rgba(255, 107, 0, 0.05) 0%, transparent 70%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .stat-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            font-family: 'Orbitron', sans-serif;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Kit Cards */
+        .kit-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .kit-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: 'Rajdhani', sans-serif;
+            z-index: 3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 0.85rem;
+            max-width: 120px;
+            text-align: center;
+        }
+        
+        .kit-card .card-body h3 {
+            margin-top: 10px;
+            padding-right: 100px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .kit-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .kit-feature i {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            width: 30px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        /* Course Section */
+        .course-availability {
+            color: var(--accent-orange) !important;
+            font-weight: 500;
+        }
+        
+        /* Robotics Kits Section */
+        .kit-shipping-info {
+            color: var(--text-light) !important;
+            font-weight: 400;
+        }
+        
+        /* New Features Section */
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+        }
+        
+        /* Gallery Section (not used but keep style) */
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 10, 15, 0.9), transparent);
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+            padding: 2.5rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            height: 100%;
+        }
+        
+        /* Contact Form */
+        .form-control-custom {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 107, 0, 0.3);
+            color: var(--text-light);
+            padding: 1rem 1.2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .form-control-custom:focus {
+            border-color: var(--accent-orange);
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-light);
+            box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--accent-yellow-light);
+            margin-bottom: 0.5rem;
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        /* Contact Container */
+        .contact-container {
+            background: rgba(26, 26, 36, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-info h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+        
+        .contact-details h4 {
+            font-family: 'Rajdhani', sans-serif;
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        .contact-details p {
+            color: var(--text-light);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+        
+        .contact-form h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .contact-form h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .form-status {
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .form-status.success {
+            background: rgba(0, 255, 0, 0.1);
+            color: #00ff00;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+        }
+        
+        .form-status.error {
+            background: rgba(255, 0, 0, 0.1);
+            color: #ff0000;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--secondary-dark);
+            border-top: 1px solid rgba(255, 107, 0, 0.3);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+        
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .footer-brand-logo {
+            height: 150px;
+            margin-right: 20px;
+            filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.5));
+        }
+        
+        .footer-brand-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 1.8rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        
+        .footer-brand-text span {
+            font-weight: 700;
+            display: block;
+            font-size: 1.6rem;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--accent-yellow);
+            border-radius: 50%;
+            margin-right: 0.8rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 1.2rem;
+        }
+        
+        .social-icon:hover {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .footer-links h5 {
+            color: var(--accent-yellow);
+            margin-bottom: 1.5rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h5::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent-yellow);
+            transform: translateX(5px);
+        }
+        
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loading-robot {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: robotFloat 2s infinite ease-in-out;
+        }
+        
+        .loading-robot::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            top: 0;
+            left: 20px;
+        }
+        
+        .loading-robot::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-dark);
+            border-radius: 50%;
+            top: 15px;
+            left: 30px;
+            box-shadow: 0 0 0 5px var(--accent-yellow);
+        }
+        
+        @keyframes robotFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* Cart Notification */
+        .cart-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 300px;
+        }
+        
+        .cart-notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        /* About Section */
+        .about-text-yellow {
+            color: var(--accent-yellow) !important;
+        }
+        
+        /* Button Group Adjustments */
+        .btn-group-sm .btn {
+            padding: 0.25rem 0.5rem;
+        }
+        
+        /* ============ DESKTOP ENHANCEMENTS ============ */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1400px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1600px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .hero-section {
+                padding: 160px 0 100px;
+            }
+        }
+        @media (min-width: 992px) {
+            .video-container {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+        
+        /* ============ MOBILE VIEW FIXES ============ */
+        @media (max-width: 992px) {
+            .navbar {
+                padding: 0.5rem 0;
+            }
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                width: auto;
+                margin-right: 0;
+                max-width: 70%;
+            }
+            .brand-text {
+                flex-direction: column;
+                line-height: 1.1;
+            }
+            .brand-line-1 {
+                font-size: 1rem;
+                font-weight: 900;
+            }
+            .brand-line-2 {
+                font-size: 0.85rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+            .navbar-toggler {
+                order: 2;
+                margin-left: auto;
+                margin-right: 0;
+            }
+            .navbar-collapse {
+                background: rgba(10, 10, 15, 0.98);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                padding: 1.5rem;
+                border-radius: 15px;
+                margin-top: 15px;
+                border: 1px solid rgba(255, 107, 0, 0.3);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                max-height: 70vh;
+                overflow-y: auto;
+            }
+            .nav-link {
+                text-align: center;
+                padding: 0.8rem 1rem !important;
+                margin: 0.3rem 0;
+                font-size: 1.1rem;
+                border-bottom: 1px solid rgba(255, 107, 0, 0.1);
+                width: 100%;
+            }
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+            .nav-link::after {
+                display: none;
+            }
+            .demo-nav-btn {
+                margin-left: 0;
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                padding: 0.8rem 1.5rem;
+                font-size: 1.1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .navbar-nav {
+                width: 100%;
+                margin: 0;
+            }
+            .company-logo {
+                height: 50px;
+                margin-right: 10px;
+            }
+            .navbar-brand span {
+                font-size: 1rem;
+                white-space: normal;
+                line-height: 1.2;
+            }
+        }
+        
+        @media (min-width: 993px) {
+            .brand-text {
+                flex-direction: row;
+                align-items: center;
+            }
+            .brand-line-1 {
+                margin-right: 5px;
+            }
+            .brand-line-1, .brand-line-2 {
+                font-size: 1.4rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 120px;
+                padding-bottom: 60px;
+                min-height: auto;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 1.2rem;
+                line-height: 1.2;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+                text-align: center;
+                padding-left: 0;
+                margin-bottom: 2rem;
+                padding: 0 10px;
+            }
+            .hero-subtitle::before {
+                display: none;
+            }
+            .hero-badge {
+                margin: 0 auto 1.5rem;
+                display: block;
+                width: fit-content;
+                text-align: center;
+                font-size: 0.9rem;
+                padding: 0.5rem 1.2rem;
+            }
+            .d-flex.flex-wrap.gap-3 {
+                justify-content: center;
+                gap: 1rem !important;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .btn-primary-custom, .btn-secondary-custom {
+                width: 100%;
+                max-width: 280px;
+                padding: 0.9rem 1.5rem;
+                font-size: 1rem;
+                margin: 0.2rem 0;
+            }
+            .video-container {
+                height: auto;
+                margin-top: 2.5rem;
+                max-width: 100%;
+            }
+            .video-container .position-absolute {
+                max-width: 250px;
+                padding: 0.8rem;
+            }
+            .video-container .position-absolute h5 {
+                font-size: 0.9rem;
+            }
+            .video-container .position-absolute p {
+                font-size: 0.75rem;
+            }
+            .hero-video {
+                border-width: 2px;
+            }
+            .hero-section .row {
+                flex-direction: column;
+            }
+            .hero-section .col-lg-6 {
+                width: 100%;
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 70px 0;
+            }
+            .section-title {
+                margin-bottom: 3rem;
+                width: 100%;
+                text-align: center;
+            }
+            .section-title h2 {
+                font-size: 2.3rem;
+                line-height: 1.3;
+                word-break: keep-all;
+            }
+            .section-title::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .section-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 3rem;
+                padding: 0 1rem;
+            }
+            .stat-card {
+                padding: 1.2rem;
+                margin-bottom: 0.8rem;
+                min-height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .stat-number {
+                font-size: 2.2rem;
+                margin-bottom: 0.5rem;
+                line-height: 1;
+                text-align: center;
+                width: 100%;
+            }
+            .stat-card h5 {
+                font-size: 0.95rem;
+                margin-bottom: 0;
+                text-align: center;
+                line-height: 1.3;
+                width: 100%;
+            }
+            .stats-section .row {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            }
+            .stats-section .col-6 {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .card-custom {
+                margin-bottom: 2rem;
+            }
+            .card-header-custom {
+                padding: 1.5rem;
+            }
+            .course-icon {
+                font-size: 2.5rem;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                margin-bottom: 0.5rem;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 100px;
+                font-size: 1.6rem;
+                min-height: 60px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                text-align: center;
+            }
+            .kit-badge {
+                top: 12px;
+                right: 12px;
+                padding: 0.4rem 1rem;
+                font-size: 0.8rem;
+                max-width: 110px;
+            }
+            .price-tag {
+                font-size: 2.5rem;
+            }
+            .feature-card {
+                padding: 2rem 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+            .feature-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+            .card-body ul li {
+                font-size: 0.95rem;
+                margin-bottom: 0.3rem;
+            }
+            #courses .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            #courses .col-lg-6 {
+                width: 100%;
+                max-width: 500px;
+                padding: 0 15px;
+            }
+            #kits .row.justify-content-center {
+                flex-direction: column;
+                align-items: center;
+            }
+            #kits .col-lg-5 {
+                width: 100%;
+                max-width: 400px;
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 2rem 1.5rem;
+            }
+            .contact-info h3,
+            .contact-form h3 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            .contact-info h3::after,
+            .contact-form h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            .contact-details h4 {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            .contact-details p {
+                font-size: 0.95rem;
+                text-align: center;
+            }
+            .form-control-custom {
+                padding: 0.9rem 1rem;
+                font-size: 0.95rem;
+            }
+            .form-label {
+                font-size: 0.95rem;
+            }
+            .contact-form .row {
+                margin: 0;
+            }
+            .contact-form .col-md-6 {
+                padding: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .footer {
+                padding: 3rem 0 1.5rem;
+                text-align: left;
+            }
+            .footer-brand {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: left;
+                margin-bottom: 2rem;
+                flex-direction: row;
+            }
+            .footer-brand-logo {
+                height: 200px;
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .footer-brand-text {
+                font-size: 1.8rem;
+                font-weight: 900;
+                line-height: 1.2;
+                text-align: left;
+            }
+            .footer-brand-text span {
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+            .footer > .container > .row > .col-lg-4 > p {
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            .footer > .container > .row > .col-lg-4 > div {
+                text-align: left;
+            }
+            .footer-links {
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+            .footer-links h5 {
+                text-align: left;
+            }
+            .footer-links h5::after {
+                left: 0;
+                transform: none;
+            }
+            .social-icon {
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .cart-notification {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                max-width: none;
+                text-align: center;
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+            .footer .row > div {
+                margin-bottom: 2rem;
+            }
+            .footer .row > div:last-child {
+                margin-bottom: 0;
+            }
+            .footer .text-md-start,
+            .footer .text-md-end {
+                text-align: left !important;
+            }
+            .footer-links ul li {
+                text-align: left;
+            }
+            .footer-links ul li a {
+                text-align: left;
+                display: inline-block;
+            }
+            .footer .row:last-child {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .footer .row:last-child .col-md-6 {
+                text-align: center !important;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .footer .row:last-child .col-md-6:last-child {
+                margin-bottom: 0;
+            }
+            .footer .row:last-child p {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .company-logo {
+                height: 45px;
+                margin-right: 8px;
+            }
+            .brand-line-1 {
+                font-size: 0.9rem;
+            }
+            .brand-line-2 {
+                font-size: 0.8rem;
+            }
+            .video-container {
+                height: auto;
+            }
+            .section-title h2 {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+            .section-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .stat-card {
+                padding: 1rem;
+                min-height: 130px;
+            }
+            .stat-number {
+                font-size: 2rem;
+                margin-bottom: 0.4rem;
+            }
+            .stat-card h5 {
+                font-size: 0.85rem;
+                line-height: 1.2;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 85px;
+                font-size: 1.5rem;
+                min-height: 55px;
+            }
+            .footer-brand-logo {
+                height: 200px;
+            }
+            .footer-brand-text {
+                font-size: 1.8rem;
+            }
+            .footer-brand-text span {
+                font-size: 1.6rem;
+            }
+            .kit-feature {
+                font-size: 0.9rem;
+            }
+            #cart-section .d-flex {
+                flex-direction: column;
+            }
+            #cart-section .d-flex > div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            #cart-section .d-flex .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+            .progression-item {
+                padding: 0.8rem !important;
+            }
+            .progression-item .badge {
+                padding: 0.4rem 0.7rem !important;
+                font-size: 0.85rem !important;
+                margin-right: 0.8rem !important;
+            }
+            .progression-item .fs-5 {
+                font-size: 1rem !important;
+                line-height: 1.2;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            .company-logo {
+                height: 40px;
+                margin-right: 6px;
+            }
+            .brand-line-1 {
+                font-size: 0.85rem;
+            }
+            .brand-line-2 {
+                font-size: 0.75rem;
+            }
+            .video-container {
+                height: auto;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+            .stat-card {
+                padding: 0.8rem;
+                min-height: 120px;
+            }
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            .stat-card h5 {
+                font-size: 0.8rem;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 75px;
+                font-size: 1.4rem;
+                min-height: 50px;
+            }
+            .kit-badge {
+                max-width: 90px;
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+                top: 10px;
+                right: 10px;
+            }
+            .footer-brand-logo {
+                height: 200px;
+            }
+            .footer-brand-text {
+                font-size: 1.8rem;
+            }
+            .footer-brand-text span {
+                font-size: 1.6rem;
+            }
+            .btn-primary-custom, .btn-secondary-custom {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.95rem;
+            }
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.7rem 0.9rem !important;
+            }
+        }
+        
+        @media (min-width: 577px) and (max-width: 768px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .video-container {
+                height: auto;
+            }
+            .section-title h2 {
+                font-size: 2.4rem;
+                line-height: 1.3;
+            }
+            .stat-card {
+                padding: 1.5rem;
+                min-height: 150px;
+            }
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            .stat-card h5 {
+                font-size: 1rem;
+            }
+            .kit-card .card-body h3 {
+                padding-right: 100px;
+                font-size: 1.7rem;
+            }
+            .d-flex.flex-wrap.gap-3 {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .btn-primary-custom, .btn-secondary-custom {
+                width: auto;
+                min-width: 200px;
+            }
+        }
+        
+        @media (max-width: 1400px) {
+            .company-logo {
+                height: 80px;
+            }
+            .video-container {
+                height: auto;
+                max-width: 550px;
+            }
+            .footer-brand-logo {
+                height: 130px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .company-logo {
+                height: 75px;
+            }
+            .video-container {
+                height: auto;
+                max-width: 500px;
+            }
+            .footer-brand-logo {
+                height: 120px;
+            }
+            .section-title h2 {
+                font-size: 2.8rem;
+            }
+            .hero-title {
+                font-size: 3.2rem;
+            }
+        }
+        
+        @media (max-height: 600px) and (orientation: landscape) {
+            .hero-section {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 60px;
+            }
+            .video-container {
+                height: auto;
+            }
+            .company-logo {
+                height: 55px;
+            }
+            .footer-brand-logo {
+                height: 100px;
+            }
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .hero-subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+            .stat-card {
+                padding: 0.8rem;
+                min-height: 110px;
+            }
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            .stat-card h5 {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (hover: none) and (pointer: coarse) {
+            .card-custom:hover {
+                transform: none;
+                border-color: rgba(255, 107, 0, 0.2);
+                box-shadow: none;
+            }
+            .card-custom:active {
+                transform: scale(0.98);
+                border-color: var(--accent-orange);
+                box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+            }
+            .feature-card:hover,
+            .stat-card:hover {
+                transform: none;
+                border-color: rgba(255, 107, 0, 0.1);
+                box-shadow: none;
+            }
+            .feature-card:active,
+            .stat-card:active {
+                transform: scale(0.98);
+                border-color: var(--accent-orange);
+                box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+            }
+            .nav-link:hover::after {
+                width: 0;
+            }
+            .btn-primary-custom:hover,
+            .btn-secondary-custom:hover,
+            .demo-nav-btn:hover {
+                transform: none;
+            }
+            .btn-primary-custom:active,
+            .btn-secondary-custom:active,
+            .demo-nav-btn:active {
+                transform: scale(0.98);
+            }
+        }
+        
+        .btn-primary-custom,
+        .btn-secondary-custom,
+        .demo-nav-btn {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-link,
+            .demo-nav-btn,
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                touch-action: manipulation;
+            }
+            .social-icon {
+                width: 44px;
+                height: 44px;
+                min-height: 44px;
+            }
+            .kit-badge,
+            .hero-badge {
+                min-height: 36px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .navbar-nav .nav-item {
+                margin: 0;
+                width: 100%;
+            }
+        }
+        
+        @supports (-webkit-touch-callout: none) {
+            .hero-section {
+                min-height: -webkit-fill-available;
+            }
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        h1, h2, h3, h4, h5, h6, p {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+        
+        /* FIX 1: CSR images */
+        .image-frame {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            height: 300px;
+            width: 100%;
+            background: transparent;
+            cursor: pointer;
+        }
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .image-frame:hover img {
+            transform: scale(1.02);
+        }
+        .image-frame:hover {
+            box-shadow: 0 0 25px var(--accent-orange), 0 0 40px rgba(255,107,0,0.4);
+        }
+        @media (max-width: 576px) {
+            .image-frame {
+                height: 220px;
+            }
+        }
+        
+        .image-modal .modal-content {
+            background: transparent;
+            border: none;
+        }
+        .image-modal .modal-body {
+            padding: 0;
+            text-align: center;
+        }
+        .image-modal .modal-body img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255,107,0,0.5);
+        }
+        .image-modal .btn-close {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            filter: invert(1) grayscale(100%) brightness(200%);
+            opacity: 0.8;
+        }
+        
+        /* FIX 3: competition ladder arrows visible on mobile */
+        .competition-flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem 1rem;
+        }
+        .competition-flow .flow-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100px;
+        }
+        .competition-flow .flow-arrow {
+            font-size: 2rem;
+            color: var(--accent-orange);
+            margin: 0 0.5rem;
+        }
+        @media (max-width: 576px) {
+            .competition-flow {
+                flex-direction: column;
+            }
+            .competition-flow .flow-arrow {
+                transform: rotate(90deg);
+                margin: 0.5rem 0;
+            }
+        }
+        
+        /* FIX FOR MOBILE TITLES */
+        @media (max-width: 768px) {
+            #cert-competitions .section-title h2,
+            #schools-infrastructure .section-title h2 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+                word-break: break-word;
+                padding: 0 10px;
+                hyphens: auto;
+            }
+            #cert-competitions .section-title h2 span,
+            #schools-infrastructure .section-title h2 span {
+                display: inline-block;
+            }
+        }
+        @media (max-width: 576px) {
+            #cert-competitions .section-title h2,
+            #schools-infrastructure .section-title h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Custom styles for Privacy Policy page */
+        .glowing-badge {
+            display: inline-block;
+            background: rgba(255, 107, 0, 0.1);
+            border: 2px solid var(--accent-orange);
+            border-radius: 50px;
+            padding: 0.7rem 1.5rem;
+            font-weight: 600;
+            color: var(--accent-yellow);
+            box-shadow: 0 0 15px rgba(255,107,0,0.5);
+            animation: glowPulse 2s infinite alternate;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        
+        .policy-section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 107, 0, 0.02);
+            border-radius: 15px;
+            border-left: 5px solid var(--accent-orange);
+            transition: all 0.3s ease;
+        }
+        .policy-section:hover {
+            background: rgba(255, 107, 0, 0.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .policy-section h4 {
+            color: var(--accent-yellow);
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .policy-section p, .policy-section ul {
+            color: var(--text-muted);
+        }
+        .policy-section ul {
+            padding-left: 1.5rem;
+        }
+        .policy-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        .policy-section strong {
+            color: var(--accent-orange-light);
+        }
+        .policy-section .list-check {
+            list-style: none;
+            padding-left: 0;
+        }
+        .policy-section .list-check li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        .policy-section .list-check li i {
+            color: var(--accent-yellow);
+            margin-top: 0.2rem;
+        }
+        
+        /* Download button (moved to bottom) */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--gradient-secondary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 20px rgba(0, 243, 255, 0.3);
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 243, 255, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        /* Policy container extra spacing */
+        .policy-card {
+            padding: 3rem;
+        }
+        @media (max-width: 768px) {
+            .policy-card {
+                padding: 1.5rem;
+            }
+            .policy-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-robot"></div>
+    </div>
+    
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-element" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+    <div class="floating-element" style="width: 200px; height: 200px; top: 60%; right: 10%;"></div>
+    <div class="floating-element" style="width: 250px; height: 250px; bottom: 10%; left: 15%;"></div>
+    <div class="floating-element" style="width: 150px; height: 150px; top: 20%; right: 20%;"></div>
+    
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cartNotification">
+        <i class="fas fa-robot me-2"></i>
+        <span id="notificationText">Item added to cart!</span>
+    </div>
+    
+    <!-- Navigation (exact copy from index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo-font" href="index.html">
+                <img src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/5dad4093-d51e-42cf-8e14-fea12d2acb7d%20(1)-Picsart-AiImageEnhancer-artguru%20(1).png" 
+                     alt="KalkiOrion Robotics Lab Logo" class="company-logo">
+                <div class="brand-text">
+                    <span class="brand-line-1">KALKIORION</span>
+                    <span class="brand-line-2">ROBOTICS LABS</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kits">Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progressreport.html">Progress Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshop.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- Additional items for mobile/tablet only -->
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="certifications&competitions.html">Certifications & Competitions</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="csrgovernment.html">CSR / Government</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="privacypolicy.html">Privacy & Policy</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="refundpolicy.html">Refund Policy</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="terms&conditions.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="demo-nav-btn" href="demo.html">
+                            <i class="fas fa-calendar-alt me-2"></i>Book Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Privacy Policy (no download button) -->
+    <section class="hero-section" style="padding: 140px 0 60px;">
+        <div class="hero-bg"></div>
+        <div class="container text-center" data-aos="fade-up">
+            <div class="hero-badge">
+                <i class="fas fa-shield-alt me-2"></i>Your Data, Our Priority
+            </div>
+            <h1 class="hero-title">Privacy <span class="text-warning">Policy</span></h1>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content (enhanced layout) -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="card-custom p-4 p-lg-5 policy-card" data-aos="fade-up">
+                
+                <!-- Company Info -->
+                <div class="policy-section">
+                    <h4>KalkiOrion Robotics Labs (Origin of X Games)</h4>
+                    <p><strong>Effective Date:</strong> 12 February 2026<br>
+                    <strong>Website:</strong> kalkiorionroboticslabs.in<br>
+                    <strong>Registered Office:</strong> DLF Phase 5, Golf Course Road, Sector 43, Gurugram, Haryana, India<br>
+                    <strong>Contact Email:</strong> info@kalkiorionroboticslabs.in</p>
+                </div>
+
+                <!-- All policy sections (1 to 24) with enhanced styling -->
+                <div class="policy-section">
+                    <h4>1. Introduction</h4>
+                    <p>KalkiOrion Robotics Labs (“KalkiOrion”, “we”, “us”, or “our”) is committed to protecting the privacy and personal data of students, parents/guardians, schools, institutions, trainers, competition participants, website visitors, and business partners.</p>
+                    <p>This Privacy Policy explains how we collect, use, process, disclose, and safeguard personal information when you interact with our website, robotics and STEM programs, school licensing model, competitions, training services, and related offerings.</p>
+                    <p>We comply with applicable data protection laws, including:</p>
+                    <ul>
+                        <li>Information Technology Act, 2000 (India)</li>
+                        <li>Digital Personal Data Protection Act (DPDP Act), 2023 (India)</li>
+                        <li>General Data Protection Regulation (GDPR – European Union)</li>
+                        <li>UAE Federal Decree Law No. 45 of 2021 on Personal Data Protection</li>
+                        <li>Other applicable international data protection regulations</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h4>2. Scope of Services</h4>
+                    <p>We provide structured and long-term:</p>
+                    <ul>
+                        <li>Robotics and STEM education programs</li>
+                        <li>School licensing models</li>
+                        <li>Teacher and trainer workshops</li>
+                        <li>Competitions and league events</li>
+                        <li>Certification programs</li>
+                    </ul>
+                    <p>This Policy applies to all services delivered online or offline.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>3. Information We Collect</h4>
+                    <p>We collect only the information necessary to deliver and improve our services.</p>
+                    <p><strong>A. Personal Information</strong><br>
+                    Full name, Email address, Phone number, School or institution name, Grade or class details, Billing and payment information, Postal address.</p>
+                    <p><strong>B. Student Data (Collected Through Schools)</strong><br>
+                    Enrollment details, Attendance records, Assessment scores, Project submissions, Competition performance data.<br>
+                    We do not knowingly collect sensitive personal data unless required by law and supported by explicit consent.</p>
+                    <p><strong>C. Technical Information</strong><br>
+                    IP address, Browser type and version, Device information, Cookies and analytics data.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>4. How We Use Your Information</h4>
+                    <p>We use personal data strictly for legitimate business purposes, including:</p>
+                    <ul>
+                        <li>Delivering robotics and STEM programs</li>
+                        <li>Managing school licensing and renewals</li>
+                        <li>Conducting competitions and events</li>
+                        <li>Processing payments and issuing certificates</li>
+                        <li>Improving curriculum, technology, and service quality</li>
+                        <li>Legal compliance and official communication</li>
+                    </ul>
+                    <p>We do not sell, rent, or trade personal data to third parties.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>5. Legal Basis for Processing</h4>
+                    <p>We process personal data under one or more of the following legal grounds:</p>
+                    <ul>
+                        <li>Contractual necessity (e.g., school licensing agreements)</li>
+                        <li>Explicit consent (parents, guardians, participants)</li>
+                        <li>Legitimate business interests</li>
+                        <li>Compliance with legal and regulatory obligations</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h4>6. User Responsibilities</h4>
+                    <p>By accessing or using our services, you agree to:</p>
+                    <ul>
+                        <li>Provide accurate and complete information</li>
+                        <li>Refrain from misusing training materials or resources</li>
+                        <li>Not copy, reproduce, distribute, or resell curriculum or proprietary materials</li>
+                        <li>Respect all intellectual property rights</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h4>7. Intellectual Property Rights</h4>
+                    <p>All curriculum content, robotics designs, competition formats, branding, digital assets, documentation, and materials are the exclusive intellectual property of KalkiOrion Robotics Labs (Origin of X Games). Unauthorized reproduction, redistribution, or commercial use is strictly prohibited and may result in legal action.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>8. Data Sharing and Disclosure</h4>
+                    <p>We may share data only when necessary with:</p>
+                    <ul>
+                        <li>Authorized trainers and school administrators</li>
+                        <li>Event and competition partners (limited to event execution)</li>
+                        <li>Payment gateway providers</li>
+                        <li>Government authorities when legally required</li>
+                    </ul>
+                    <p>All third parties are bound by confidentiality and data protection obligations.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>9. Payment and Billing Practices</h4>
+                    <p>All fees are non-refundable unless expressly stated in writing. Annual license renewal is mandatory for continued program access. Delayed payments may result in temporary suspension of services.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>10. Data Retention</h4>
+                    <p>We retain data only as long as necessary:</p>
+                    <ul>
+                        <li>Student academic records: Up to 5 years after program completion</li>
+                        <li>Financial records: As required by statutory regulations</li>
+                        <li>Marketing and consent data: Until consent is withdrawn</li>
+                    </ul>
+                    <p>After retention periods expire, data is securely deleted or irreversibly anonymized.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>11. Data Security</h4>
+                    <p>We implement industry-standard security measures, including:</p>
+                    <ul>
+                        <li>SSL/TLS encryption</li>
+                        <li>Secure cloud storage with encryption at rest</li>
+                        <li>Role-based access controls</li>
+                        <li>Confidentiality agreements for staff</li>
+                        <li>Regular security audits</li>
+                    </ul>
+                    <p>While we take reasonable precautions, no digital system can guarantee absolute security.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>12. Cookies Policy</h4>
+                    <p>We use essential and analytics cookies to ensure website functionality, measure performance, and improve user experience. You may disable cookies via browser settings, although certain features may not function properly.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>13. Children’s Privacy</h4>
+                    <p>Student data is collected only through school authorization or verified parental consent. We do not directly market to children under 18 years of age. Parents or guardians may request access, correction, or deletion of their child’s data at any time.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>14. Media and Competition Consent</h4>
+                    <p>Participation in competitions, workshops, events, leagues, or showcases constitutes consent (or parental consent for minors) to:</p>
+                    <ul>
+                        <li>Photography</li>
+                        <li>Video recording</li>
+                        <li>Live streaming</li>
+                        <li>Use of media for marketing, website, social media, YouTube, brochures, and academic publications</li>
+                    </ul>
+                    <p>No financial compensation is provided. Consent may be withdrawn prospectively via written notice to info@kalkiorionroboticslabs.in.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>15. International Data Transfers</h4>
+                    <p>Where data is transferred outside India, we ensure adequate protection through:</p>
+                    <ul>
+                        <li>Standard Contractual Clauses (SCCs)</li>
+                        <li>Adequacy decisions</li>
+                        <li>Other lawful cross-border transfer mechanisms</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h4>16. Your Rights</h4>
+                    <p>Subject to applicable laws, you have the right to:</p>
+                    <ul>
+                        <li>Access your personal data</li>
+                        <li>Correct inaccurate information</li>
+                        <li>Withdraw consent</li>
+                        <li>Request deletion (subject to legal obligations)</li>
+                        <li>Object to processing</li>
+                        <li>Request data portability</li>
+                        <li>Lodge a complaint with the relevant supervisory authority</li>
+                    </ul>
+                    <p>To exercise your rights, contact: info@kalkiorionroboticslabs.in</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>17. Limitation of Liability</h4>
+                    <p>To the maximum extent permitted by law, our total liability shall not exceed the fees paid in the preceding six months. We are not liable for: indirect or consequential damages, internal school data mishandling, network failures, force majeure events.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>18. Termination of Services</h4>
+                    <p>We reserve the right to suspend or terminate services in cases of: policy violations, payment default, intellectual property misuse.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>19. Governing Law and Jurisdiction</h4>
+                    <p>This Privacy Policy is governed by the laws of India. For users located in the EU or UAE, applicable local consumer protection and data protection laws supplement this Policy.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>20. School Data Protection Addendum (DPA)</h4>
+                    <p>This Addendum forms an integral part of all School Licensing Agreements.</p>
+                    <p><strong>Roles:</strong> School: Data Controller / Data Fiduciary; KalkiOrion Robotics Labs: Data Processor</p>
+                    <p><strong>Scope:</strong> We process student data solely for robotics and STEM training, assessment and certification, competition participation.</p>
+                    <p>We will not: sell or rent student data, use data for unrelated marketing, share data without explicit school authorization.</p>
+                    <p><strong>Security and Sub-Processors:</strong> All sub-processors, including cloud providers, payment gateways, and certification platforms, are bound by equivalent data protection obligations.</p>
+                    <p><strong>Breach Notification:</strong> In the event of a data breach, affected schools will be notified within 72 hours, including an impact assessment and corrective action plan.</p>
+                    <p><strong>Termination:</strong> Upon agreement termination, student data will be returned or securely deleted within 60 days, except where retention is required for statutory compliance.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>21. Competition Media Waiver Clause</h4>
+                    <p>Registration forms may include the following consent checkbox:</p>
+                    <p><em>“By participating in any KalkiOrion Robotics Labs competition, event, workshop, or showcase, I (or my parent/guardian if I am a minor) consent to photography, video recording, live streaming, and use of my likeness and work for marketing, website, social media, YouTube, brochures, and academic publications. No financial compensation is payable. Consent may be withdrawn prospectively by written notice.”</em></p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>22. Third-Party Links</h4>
+                    <p>Our website may contain links to third-party websites. We are not responsible for their privacy practices or content.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>23. Policy Updates</h4>
+                    <p>We may update this Privacy Policy periodically. The revised version will be posted on our website with an updated effective date. Continued use of our services after updates constitutes acceptance of the revised Policy.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h4>24. Contact and Grievance Redressal</h4>
+                    <p><strong>Grievance Officer (DPDP Act, 2023):</strong> Ankan Chakraborty<br>
+                    <h6><strong>Email:</strong> info@kalkiorionroboticslabs.in<br>
+                    <h6>We respond to privacy-related requests within 15 business days.</h6></p>
+                    <p><strong>Registered Office:</strong> DLF Phase 5, Golf Course Road, Sector 43, Gurugram, Haryana, India</p>
+                </div>
+
+                <!-- Final Acknowledgement with Download Button (now at the bottom) -->
+                <div class="policy-section text-center mt-5">
+                    <h3 class="glowing-badge mb-4"><i class="fas fa-check-circle me-2"></i>By accessing or using our services, you acknowledge that you have read, understood, and agree to this Privacy Policy.</h3>
+                    <a href="https://docs.google.com/document/d/1QAuu2fQh8NcxlZ84OgjclZlSU_Vxnl1Bg7d6__C8bfA/export?format=pdf" download class="download-btn">
+                        <i class="fas fa-download"></i> Download PDF Version
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (exact copy from index.html, with corrected link to privacy policy) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a href="index.html" class="footer-brand">
+                        <img src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/5dad4093-d51e-42cf-8e14-fea12d2acb7d%20(1)-Picsart-AiImageEnhancer-artguru%20(1).png" 
+                             alt="KalkiOrion Robotics Lab Logo" class="footer-brand-logo">
+                        <div class="footer-brand-text">
+                            KALKIORION<br>
+                            <span>ROBOTICS LABS</span>
+                        </div>
+                    </a>
+                    <p class="mb-4">Empowering students with hands-on learning in Robotics, Python, and Artificial Intelligence through project-based training and mentorship.</p>
+                    <div class="text-md-start">
+                        <a href="https://www.facebook.com/profile.php?id=61588278818643" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/kalkiorionrobot" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kalkiorionroboticslabs/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/kalki-orion-robotics-labs/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kalkiorionroboticslabs?si=VKiubulxP-po81W3" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="progressreport.html">Progress Report</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="certifications&competitions.html">Certifications & Competitions</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="workshop.html">Workshop</a></li>
+                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                            <li><a href="demo.html">Book Demo</a></li>
+                            <li><a href="csrgovernment.html">CSR / Government</a></li>
+                            <li><a href="privacypolicy.html">Privacy & Policy</a></li>
+                            <li><a href="refundpolicy.html">Refund Policy</a></li>
+                            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Our Courses</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html#courses">Robotics Mastery</a></li>
+                            <li><a href="index.html#courses">Python & AI</a></li>
+                            <li><a href="index.html#courses">3D Modeling</a></li>
+                            <li><a href="index.html#courses">Web Development</a></li>
+                            <li><a href="index.html#courses">Data Analytics</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-warning"></i>DLF Phase 5, Golf Course Road, Sector 43, Gurugram, Haryana, India</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2 text-warning"></i>+91 9315847513</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2 text-warning"></i>+91 8076401469</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2 text-warning"></i>info@kalkiorionroboticslabs.in</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-4" style="border-color: rgba(255, 107, 0, 0.3);">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2026 KalkiOrion Robotics Labs. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Designed with <i class="fas fa-heart text-danger"></i> for the future innovators</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal (for CSR, kept but not used) -->
+    <div class="modal fade image-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="" id="modalImage" class="img-fluid" alt="Enlarged view">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+
+        // Particles.js
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: ["#ff6b00", "#ffc107", "#00f3ff", "#9d4edd"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#ff6b00", opacity: 0.2, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } }
+            }
+        });
+
+        // Loading overlay
+        window.addEventListener('load', function() {
+            setTimeout(() => document.getElementById('loadingOverlay').classList.add('hidden'), 1500);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // Smooth scrolling for anchor links (if any)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Dummy cart functions (to avoid errors)
+        function showNotification(msg) { console.log(msg); }
+        function addToCart() {}
+        function updateCartDisplay() {}
+        function clearCart() {}
+        function checkout() {}
+
+        // Image modal set (if used)
+        document.querySelectorAll('.image-frame[data-bs-toggle="modal"]').forEach(frame => {
+            frame.addEventListener('click', function() {
+                const imgSrc = this.getAttribute('data-img-src');
+                document.getElementById('modalImage').src = imgSrc;
+            });
+        });
+    </script>
+</body>
+</html>

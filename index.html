@@ -1,0 +1,3985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary SEO -->
+    <link rel="shortcut icon" href="logo.png?v=10" type="image/png">
+    <link rel="icon" type="image/png" sizes="512x512" href="logo.png?v=10">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo.png?v=10">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png?v=10"> 
+    <title>Robotics Education for Schools and Students | KalkiOrion Robotics Labs</title>
+    <meta name="description" content="KalkiOrion Robotics Labs provides robotics education programs for schools and students including robotics workshops, STEM learning and AI robotics innovation.">
+    <meta name="keywords" content="robotics education for students, robotics education for schools, robotics workshop for students, robotics lab for schools, STEM robotics program, AI robotics course">
+    <meta name="author" content="KalkiOrion Robotics Labs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kalkiorionroboticslabs.in/">
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="KalkiOrion Robotics Labs">
+    <meta property="og:description" content="Advanced robotics education programs for students and schools.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kalkiorionroboticslabs.in">
+    <meta property="og:image" content="https://kalkiorionroboticslabs.in/images/robotics-preview.jpg">
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KalkiOrion Robotics Labs">
+    <meta name="twitter:description" content="Robotics education for schools and students">
+    <meta name="twitter:image" content="https://kalkiorionroboticslabs.in/images/robotics-preview.jpg">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Structured Data (JSON‑LD) -->
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"EducationalOrganization",
+        "name":"KalkiOrion Robotics Labs",
+        "url":"https://kalkiorionroboticslabs.in",
+        "description":"Robotics education programs for students and schools focusing on STEM and AI robotics learning.",
+        "sameAs":[
+            "https://www.facebook.com/profile.php?id=61588278818643",
+            "https://x.com/kalkiorionrobot",
+            "https://www.instagram.com/kalkiorionroboticslabs/",
+            "https://www.linkedin.com/company/kalki-orion-robotics-labs/",
+            "https://youtube.com/@kalkiorionroboticslabs?si=VKiubulxP-po81W3"
+        ]
+    }
+    </script>
+    <style>
+        :root {
+            --primary-dark: #0a0a0f;
+            --secondary-dark: #12121a;
+            --tertiary-dark: #1a1a24;
+            --accent-orange: #ff6b00;
+            --accent-orange-light: #ff8c42;
+            --accent-yellow: #ffc107;
+            --accent-yellow-light: #ffdd40;
+            --neon-blue: #00f3ff;
+            --neon-purple: #9d4edd;
+            --text-light: #f0f0f0;
+            --text-muted: #a0a0b0;
+            --gradient-primary: linear-gradient(135deg, #ff6b00 0%, #ffc107 100%);
+            --gradient-secondary: linear-gradient(135deg, #00f3ff 0%, #9d4edd 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+        }
+        
+        .logo-font {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        
+        /* Particle Background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: 6px;
+        }
+        
+        /* Navigation - Futuristic Glass Effect */
+        .navbar {
+            background: rgba(10, 10, 15, 0.98);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 107, 0, 0.3);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.3rem 0;
+            background: rgba(10, 10, 15, 0.99);
+            box-shadow: 0 5px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .navbar-brand {
+            font-size: 1.4rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            padding: 0;
+        }
+        
+        .navbar-brand span {
+            font-size: 1.4rem;
+        }
+        
+        /* Company Logo in Navbar */
+        .company-logo {
+            height: 90px;
+            margin-right: 15px;
+            filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.5));
+            transition: transform 0.3s ease;
+        }
+        
+        .navbar-brand:hover .company-logo {
+            transform: scale(1.05) rotate(0deg);
+        }
+        
+        .navbar-nav {
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-light) !important;
+            margin: 0 0.3rem;
+            font-weight: 500;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0.8rem !important;
+            white-space: nowrap;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .nav-link:hover::after {
+            width: 70%;
+        }
+        
+        .nav-link.active {
+            color: var(--accent-yellow) !important;
+        }
+        
+        .nav-link.active::after {
+            width: 70%;
+        }
+        
+        .navbar-toggler {
+            border: 1px solid var(--accent-orange);
+            padding: 0.25rem 0.5rem;
+            margin-left: auto;
+            order: 2;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.5);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 107, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        /* Demo Button in Nav */
+        .demo-nav-btn {
+            background: var(--gradient-secondary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(0, 243, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            margin-left: 0.5rem;
+            text-decoration: none;
+        }
+        
+        .demo-nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 243, 255, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        /*  Name Text Styling - UPDATED */
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .brand-line-1 {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+        
+        .brand-line-2 {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        
+        /* Hero Section - Futuristic Design */
+        .hero-section {
+            min-height: auto;
+            padding: 140px 0 80px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 107, 0, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 243, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(157, 78, 221, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-yellow), var(--neon-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 200% auto;
+            animation: textShine 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes textShine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .hero-subtitle::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: var(--gradient-primary);
+            border-radius: 3px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3); }
+            50% { transform: scale(1.05); box-shadow: 0 8px 25px rgba(255, 107, 0, 0.5); }
+            100% { transform: scale(1); box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3); }
+        }
+        
+        /* Video Styling - UPDATED TO SHOW FULL VIDEO WITHOUT CROPPING */
+        .hero-video {
+            width: 100%;
+            height: auto;               /* changed from 100% to auto */
+            display: block;             /* ensures proper scaling */
+            border-radius: 15px;
+            border: 3px solid var(--accent-orange);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            width: 100%;                /* full width */
+            height: auto;               /* height determined by video */
+            margin: 0 auto;
+            max-width: 650px;
+        }
+        
+        .video-container video {
+            width: 100%;
+            height: auto;               /* changed from 100% to auto */
+            display: block;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 107, 0, 0.1), rgba(0, 243, 255, 0.1));
+            z-index: 1;
+            pointer-events: none;
+        }
+        
+        .btn-primary-custom {
+            background: var(--gradient-primary);
+            border: none;
+            color: var(--primary-dark);
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 5px 20px rgba(255, 107, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        
+        .btn-primary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+            z-index: -1;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.5);
+            color: var(--primary-dark);
+        }
+        
+        .btn-primary-custom:hover::before {
+            left: 100%;
+        }
+        
+        .btn-secondary-custom {
+            background: transparent;
+            border: 2px solid var(--accent-orange);
+            color: var(--accent-yellow);
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        
+        .btn-secondary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--gradient-primary);
+            transition: width 0.4s ease;
+            z-index: -1;
+        }
+        
+        .btn-secondary-custom:hover {
+            color: var(--primary-dark);
+            border-color: transparent;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+        }
+        
+        .btn-secondary-custom:hover::before {
+            width: 100%;
+        }
+        
+        /* New hero elements */
+        .glowing-subheading {
+            display: inline-block;
+            background: rgba(255, 107, 0, 0.1);
+            border: 2px solid var(--accent-orange);
+            border-radius: 50px;
+            padding: 0.7rem 1.5rem;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--accent-yellow);
+            box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3);
+            text-shadow: 0 0 5px rgba(255, 107, 0, 0.5);
+            animation: glowPulse 2s infinite alternate;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+            width: auto;
+            max-width: 100%;
+            text-align: center;
+        }
+        
+        @keyframes glowPulse {
+            from { box-shadow: 0 0 10px rgba(255, 107, 0, 0.5), 0 0 20px rgba(255, 107, 0, 0.3); }
+            to { box-shadow: 0 0 15px rgba(255, 107, 0, 0.8), 0 0 30px rgba(255, 107, 0, 0.5); }
+        }
+        
+        .project-showcase {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem 0;
+            padding: 0.5rem 1rem;
+            border-left: 5px solid var(--accent-orange);
+            background-color: rgba(255, 107, 0, 0.05);
+            border-radius: 0 10px 10px 0;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Feature pills - updated to allow grid layout */
+        .feature-pill {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: rgba(26, 26, 36, 0.7);
+            border: 1px solid rgba(255, 107, 0, 0.3);
+            border-radius: 50px;
+            padding: 0.6rem 1.2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+            cursor: default;
+            font-family: 'Rajdhani', sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            min-height: 60px;
+        }
+        
+        .feature-pill:hover {
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 15px rgba(255, 107, 0, 0.5);
+            transform: translateY(-3px);
+            background: rgba(26, 26, 36, 0.9);
+        }
+        
+        /* Mobile adjustments for new elements */
+        @media (max-width: 768px) {
+            .glowing-subheading {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+            .project-showcase {
+                font-size: 1rem;
+                padding: 0.4rem 0.8rem;
+            }
+            .feature-pill {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+                min-height: 50px;
+            }
+        }
+        @media (max-width: 576px) {
+            .feature-pill {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.5rem;
+                min-height: 45px;
+            }
+        }
+        
+        /* Section Styling */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 4rem;
+            display: inline-block;
+        }
+        
+        .section-title h2 {
+            font-size: 3rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title::before {
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+            top: -30px;
+            left: -30px;
+            z-index: 1;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+        
+        /* Cards - Futuristic Glass Morphism */
+        .card-custom {
+            background: rgba(26, 26, 36, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .card-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+            z-index: 2;
+        }
+        
+        .card-custom:hover {
+            transform: translateY(-15px);
+            border-color: var(--accent-orange);
+            box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
+        }
+        
+        .card-header-custom {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 2rem;
+            border-bottom: none;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header-custom::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .course-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: rgba(10, 10, 15, 0.3);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+        .price-tag {
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+        }
+        
+        /* Floating Elements Animation */
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--neon-blue) 0%, transparent 70%);
+            opacity: 0.1;
+            z-index: -1;
+            animation: float 20s infinite linear;
+        }
+        
+        .floating-element:nth-child(2n) {
+            background: radial-gradient(circle, var(--accent-orange) 0%, transparent 70%);
+            animation-direction: reverse;
+            animation-duration: 25s;
+        }
+        
+        .floating-element:nth-child(3n) {
+            background: radial-gradient(circle, var(--neon-purple) 0%, transparent 70%);
+            animation-duration: 30s;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -50px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+        
+        /* Stats Section - UPDATED FOR MOBILE */
+        .stats-section {
+            background: radial-gradient(ellipse at center, rgba(255, 107, 0, 0.05) 0%, transparent 70%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .stat-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            font-family: 'Orbitron', sans-serif;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Kit Cards */
+        .kit-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .kit-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-family: 'Rajdhani', sans-serif;
+            z-index: 3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 0.85rem;
+            max-width: 120px;
+            text-align: center;
+        }
+        
+        /* Kit name adjustments to prevent overlapping */
+        .kit-card .card-body h3 {
+            margin-top: 10px;
+            padding-right: 100px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .kit-feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .kit-feature i {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            width: 30px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        /* Course Section */
+        .course-availability {
+            color: var(--accent-orange) !important;
+            font-weight: 500;
+        }
+        
+        /* Robotics Kits Section */
+        .kit-shipping-info {
+            color: var(--text-light) !important;
+            font-weight: 400;
+        }
+        
+        /* New Features Section */
+        .feature-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+        }
+        
+        /* Gallery Section */
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            height: 300px;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 10, 15, 0.9), transparent);
+            padding: 2rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+            padding: 2.5rem;
+            border-radius: 15px;
+            background: rgba(26, 26, 36, 0.5);
+            border: 1px solid rgba(255, 107, 0, 0.1);
+            height: 100%;
+        }
+        
+        /* Contact Form */
+        .form-control-custom {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 107, 0, 0.3);
+            color: var(--text-light);
+            padding: 1rem 1.2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .form-control-custom:focus {
+            border-color: var(--accent-orange);
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-light);
+            box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--accent-yellow-light);
+            margin-bottom: 0.5rem;
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        /* Contact Container */
+        .contact-container {
+            background: rgba(26, 26, 36, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 107, 0, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Info */
+        .contact-info h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .contact-info h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+        }
+
+        .contact-details h4 {
+            font-family: 'Rajdhani', sans-serif;
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .contact-details p {
+            color: var(--text-light);
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        /* Contact Form */
+        .contact-form h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .contact-form h3::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .form-status {
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .form-status.success {
+            background: rgba(0, 255, 0, 0.1);
+            color: #00ff00;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+        }
+
+        .form-status.error {
+            background: rgba(255, 0, 0, 0.1);
+            color: #ff0000;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary-dark);
+            border-top: 1px solid rgba(255, 107, 0, 0.3);
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-primary);
+        }
+        
+        /* Footer Company Name */
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            text-decoration: none;
+        }
+        
+        /* Footer Logo - EXACT VALUES FROM DEMO.HTML */
+        .footer-brand-logo {
+            height: 150px; /* EXACT VALUE FROM DEMO.HTML */
+            margin-right: 20px;
+            filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.5));
+        }
+        
+        /* Footer Brand Text - EXACT VALUES FROM DEMO.HTML */
+        .footer-brand-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900; /* EXACT VALUE FROM DEMO.HTML */
+            font-size: 1.8rem; /* EXACT VALUE FROM DEMO.HTML */
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        
+        .footer-brand-text span {
+            font-weight: 700; /* EXACT VALUE FROM DEMO.HTML */
+            display: block;
+            font-size: 1.6rem; /* EXACT VALUE FROM DEMO.HTML */
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--accent-yellow);
+            border-radius: 50%;
+            margin-right: 0.8rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 1.2rem;
+        }
+        
+        .social-icon:hover {
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .footer-links h5 {
+            color: var(--accent-yellow);
+            margin-bottom: 1.5rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h5::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-primary);
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--accent-yellow);
+            transform: translateX(5px);
+        }
+        
+        /* Loading Animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-dark);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        
+        .loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loading-robot {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: robotFloat 2s infinite ease-in-out;
+        }
+        
+        .loading-robot::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            top: 0;
+            left: 20px;
+        }
+        
+        .loading-robot::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-dark);
+            border-radius: 50%;
+            top: 15px;
+            left: 30px;
+            box-shadow: 0 0 0 5px var(--accent-yellow);
+        }
+        
+        @keyframes robotFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* Cart Notification */
+        .cart-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient-primary);
+            color: var(--primary-dark);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 300px;
+        }
+        
+        .cart-notification.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        /* About Section */
+        .about-text-yellow {
+            color: var(--accent-yellow) !important;
+        }
+        
+        /* Button Group Adjustments */
+        .btn-group-sm .btn {
+            padding: 0.25rem 0.5rem;
+        }
+        
+        /* ============ DESKTOP ENHANCEMENTS ============ */
+        /* Wider container for ultra‑large screens */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1400px;
+            }
+        }
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1600px;
+            }
+        }
+        /* Adjust hero spacing for very large screens */
+        @media (min-width: 1600px) {
+            .hero-section {
+                padding: 160px 0 100px;
+            }
+        }
+        /* Video container on desktop - no fixed height */
+        @media (min-width: 992px) {
+            .video-container {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+        
+        /* ============ MOBILE VIEW FIXES ONLY ============ */
+        
+        /* Mobile Navbar Fixes - UPDATED */
+        @media (max-width: 992px) {
+            .navbar {
+                padding: 0.5rem 0;
+            }
+            
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                width: auto;
+                margin-right: 0;
+                max-width: 70%;
+            }
+            
+            /* Updated brand text for mobile */
+            .brand-text {
+                flex-direction: column;
+                line-height: 1.1;
+            }
+            
+            .brand-line-1 {
+                font-size: 1rem;
+                font-weight: 900;
+            }
+            
+            .brand-line-2 {
+                font-size: 0.85rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+            
+            .navbar-toggler {
+                order: 2;
+                margin-left: auto;
+                margin-right: 0;
+            }
+            
+            .navbar-collapse {
+                background: rgba(10, 10, 15, 0.98);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                padding: 1.5rem;
+                border-radius: 15px;
+                margin-top: 15px;
+                border: 1px solid rgba(255, 107, 0, 0.3);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                max-height: 70vh;
+                overflow-y: auto;
+            }
+            
+            .nav-link {
+                text-align: center;
+                padding: 0.8rem 1rem !important;
+                margin: 0.3rem 0;
+                font-size: 1.1rem;
+                border-bottom: 1px solid rgba(255, 107, 0, 0.1);
+                width: 100%;
+            }
+            
+            .nav-link:last-child {
+                border-bottom: none;
+            }
+            
+            .nav-link::after {
+                display: none;
+            }
+            
+            .demo-nav-btn {
+                margin-left: 0;
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                padding: 0.8rem 1.5rem;
+                font-size: 1.1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .navbar-nav {
+                width: 100%;
+                margin: 0;
+            }
+            
+            .company-logo {
+                height: 50px;
+                margin-right: 10px;
+            }
+            
+            .navbar-brand span {
+                font-size: 1rem;
+                white-space: normal;
+                line-height: 1.2;
+            }
+        }
+        
+        /* Desktop view for brand text */
+        @media (min-width: 993px) {
+            .brand-text {
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            .brand-line-1 {
+                margin-right: 5px;
+            }
+            
+            .brand-line-1, .brand-line-2 {
+                font-size: 1.4rem;
+            }
+        }
+        
+        /* Mobile Hero Section Fixes */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 120px;
+                padding-bottom: 60px;
+                min-height: auto;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 1.2rem;
+                line-height: 1.2;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                text-align: center;
+                padding-left: 0;
+                margin-bottom: 2rem;
+                padding: 0 10px;
+            }
+            
+            .hero-subtitle::before {
+                display: none;
+            }
+            
+            .hero-badge {
+                margin: 0 auto 1.5rem;
+                display: block;
+                width: fit-content;
+                text-align: center;
+                font-size: 0.9rem;
+                padding: 0.5rem 1.2rem;
+            }
+            
+            .d-flex.flex-wrap.gap-3 {
+                justify-content: center;
+                gap: 1rem !important;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            
+            .btn-primary-custom, .btn-secondary-custom {
+                width: 100%;
+                max-width: 280px;
+                padding: 0.9rem 1.5rem;
+                font-size: 1rem;
+                margin: 0.2rem 0;
+            }
+            
+            /* Video container on mobile - height auto (no cropping) */
+            .video-container {
+                height: auto;
+                margin-top: 2.5rem;
+                max-width: 100%;
+            }
+            
+            .video-container .position-absolute {
+                max-width: 250px;
+                padding: 0.8rem;
+            }
+            
+            .video-container .position-absolute h5 {
+                font-size: 0.9rem;
+            }
+            
+            .video-container .position-absolute p {
+                font-size: 0.75rem;
+            }
+            
+            .hero-video {
+                border-width: 2px;
+            }
+            
+            /* Fix hero content alignment */
+            .hero-section .row {
+                flex-direction: column;
+            }
+            
+            .hero-section .col-lg-6 {
+                width: 100%;
+                padding: 0 15px;
+            }
+        }
+        
+        /* Mobile Section Spacing Fixes - UPDATED FOR STATS */
+        @media (max-width: 768px) {
+            .section {
+                padding: 70px 0;
+            }
+            
+            .section-title {
+                margin-bottom: 3rem;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .section-title h2 {
+                font-size: 2.3rem;
+                line-height: 1.3;
+                word-break: keep-all; /* Prevent awkward breaks */
+            }
+            
+            .section-title::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .section-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 3rem;
+                padding: 0 1rem;
+            }
+            
+            /* Stats Section Mobile Fix - UPDATED */
+            .stat-card {
+                padding: 1.2rem;
+                margin-bottom: 0.8rem;
+                min-height: 140px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .stat-number {
+                font-size: 2.2rem;
+                margin-bottom: 0.5rem;
+                line-height: 1;
+                text-align: center;
+                width: 100%;
+            }
+            
+            .stat-card h5 {
+                font-size: 0.95rem;
+                margin-bottom: 0;
+                text-align: center;
+                line-height: 1.3;
+                width: 100%;
+            }
+            
+            .stats-section .row {
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            }
+            
+            .stats-section .col-6 {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        
+        /* Mobile Cards Fixes */
+        @media (max-width: 768px) {
+            .card-custom {
+                margin-bottom: 2rem;
+            }
+            
+            .card-header-custom {
+                padding: 1.5rem;
+            }
+            
+            .course-icon {
+                font-size: 2.5rem;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                margin-bottom: 0.5rem;
+            }
+            
+            .kit-card .card-body h3 {
+                padding-right: 100px;
+                font-size: 1.6rem;
+                min-height: 60px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                text-align: center;
+            }
+            
+            .kit-badge {
+                top: 12px;
+                right: 12px;
+                padding: 0.4rem 1rem;
+                font-size: 0.8rem;
+                max-width: 110px;
+            }
+            
+            .price-tag {
+                font-size: 2.5rem;
+            }
+            
+            .feature-card {
+                padding: 2rem 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .feature-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+            
+            .card-body ul li {
+                font-size: 0.95rem;
+                margin-bottom: 0.3rem;
+            }
+            
+            /* Fix course cards alignment */
+            #courses .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            #courses .col-lg-6 {
+                width: 100%;
+                max-width: 500px;
+                padding: 0 15px;
+            }
+            
+            /* Fix kit cards alignment */
+            #kits .row.justify-content-center {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            #kits .col-lg-5 {
+                width: 100%;
+                max-width: 400px;
+                padding: 0 15px;
+            }
+        }
+        
+        /* Mobile Contact Form Fixes */
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 2rem 1.5rem;
+            }
+            
+            .contact-info h3,
+            .contact-form h3 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            
+            .contact-info h3::after,
+            .contact-form h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+            
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .contact-details h4 {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            
+            .contact-details p {
+                font-size: 0.95rem;
+                text-align: center;
+            }
+            
+            .form-control-custom {
+                padding: 0.9rem 1rem;
+                font-size: 0.95rem;
+            }
+            
+            .form-label {
+                font-size: 0.95rem;
+            }
+            
+            /* Fix contact form layout */
+            .contact-form .row {
+                margin: 0;
+            }
+            
+            .contact-form .col-md-6 {
+                padding: 0;
+            }
+        }
+        
+        /* ============ MOBILE FOOTER FIXES - MATCHING DEMO.HTML EXACTLY ============ */
+        @media (max-width: 768px) {
+            .footer {
+                padding: 3rem 0 1.5rem;
+                text-align: left; /* Required mobile CSS behavior */
+            }
+            
+            /* Footer Brand Block - LEFT ALIGNED like demo.html */
+            .footer-brand {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start; /* Required mobile CSS behavior */
+                text-align: left; /* Required mobile CSS behavior */
+                margin-bottom: 2rem;
+                flex-direction: row; /* Keep logo and text in same row */
+            }
+            
+            /* Footer Logo - UPDATED TO 200PX HEIGHT FOR MOBILE */
+            .footer-brand-logo {
+                height: 200px; /* UPDATED: Changed from 150px to 200px */
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            
+            /* Footer Brand Text - MATCHING DEMO.HTML EXACT VALUES */
+            .footer-brand-text {
+                font-size: 1.8rem; /* EXACT VALUE FROM DEMO.HTML */
+                font-weight: 900; /* EXACT VALUE FROM DEMO.HTML */
+                line-height: 1.2;
+                text-align: left;
+            }
+            
+            .footer-brand-text span {
+                font-size: 1.6rem; /* EXACT VALUE FROM DEMO.HTML */
+                font-weight: 700; /* EXACT VALUE FROM DEMO.HTML */
+            }
+            
+            /* Company Description - LEFT aligned */
+            .footer > .container > .row > .col-lg-4 > p {
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            
+            /* Social Icons - LEFT aligned */
+            .footer > .container > .row > .col-lg-4 > div {
+                text-align: left;
+            }
+            
+            /* Footer Links Sections - LEFT aligned */
+            .footer-links {
+                margin-bottom: 2rem;
+                text-align: left;
+            }
+            
+            .footer-links h5 {
+                text-align: left;
+            }
+            
+            .footer-links h5::after {
+                left: 0;
+                transform: none;
+            }
+            
+            .social-icon {
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            .cart-notification {
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+                max-width: none;
+                text-align: center;
+                padding: 0.8rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .footer .row > div {
+                margin-bottom: 2rem;
+            }
+            
+            .footer .row > div:last-child {
+                margin-bottom: 0;
+            }
+            
+            /* Remove center alignment classes for mobile */
+            .footer .text-md-start,
+            .footer .text-md-end {
+                text-align: left !important;
+            }
+            
+            /* Fix list alignment */
+            .footer-links ul li {
+                text-align: left;
+            }
+            
+            .footer-links ul li a {
+                text-align: left;
+                display: inline-block;
+            }
+            
+            /* ========== NEW: CENTER ALIGN BOTTOM COPYRIGHT TEXT (MOBILE ONLY) ========== */
+            /* Center align copyright text in mobile footer */
+            .footer .row:last-child {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .footer .row:last-child .col-md-6 {
+                text-align: center !important;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            
+            .footer .row:last-child .col-md-6:last-child {
+                margin-bottom: 0;
+            }
+            
+            .footer .row:last-child p {
+                text-align: center;
+                width: 100%;
+            }
+        }
+        
+        /* Extra Small Mobile Fixes - UPDATED FOR STATS AND PROGRESSION LADDER */
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .company-logo {
+                height: 45px;
+                margin-right: 8px;
+            }
+            
+            /* Updated brand text for extra small screens */
+            .brand-line-1 {
+                font-size: 0.9rem;
+            }
+            
+            .brand-line-2 {
+                font-size: 0.8rem;
+            }
+            
+            /* Video container on extra small - height auto */
+            .video-container {
+                height: auto;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            /* Stats Section Extra Small Fix - UPDATED */
+            .stat-card {
+                padding: 1rem;
+                min-height: 130px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+                margin-bottom: 0.4rem;
+            }
+            
+            .stat-card h5 {
+                font-size: 0.85rem;
+                line-height: 1.2;
+            }
+            
+            .kit-card .card-body h3 {
+                padding-right: 85px;
+                font-size: 1.5rem;
+                min-height: 55px;
+            }
+            
+            /* Footer brand logo and text sizes for extra small screens - UPDATED LOGO HEIGHT */
+            .footer-brand-logo {
+                height: 200px; /* Keep 200px on extra small screens */
+            }
+            
+            .footer-brand-text {
+                font-size: 1.8rem; /* Keep 1.8rem even on extra small screens */
+            }
+            
+            .footer-brand-text span {
+                font-size: 1.6rem; /* Keep 1.6rem even on extra small screens */
+            }
+            
+            .kit-feature {
+                font-size: 0.9rem;
+            }
+            
+            /* Fix cart section on small screens */
+            #cart-section .d-flex {
+                flex-direction: column;
+            }
+            
+            #cart-section .d-flex > div {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            
+            #cart-section .d-flex .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            /* ===== PROGRESSION LADDER MOBILE FIX ===== */
+            .progression-item {
+                padding: 0.8rem !important; /* tighter padding */
+            }
+            .progression-item .badge {
+                padding: 0.4rem 0.7rem !important; /* smaller badge */
+                font-size: 0.85rem !important;
+                margin-right: 0.8rem !important;
+            }
+            .progression-item .fs-5 {
+                font-size: 1rem !important; /* smaller text */
+                line-height: 1.2;
+            }
+        }
+        
+        /* Very Small Mobile Fixes */
+        @media (max-width: 400px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .company-logo {
+                height: 40px;
+                margin-right: 6px;
+            }
+            
+            /* Updated brand text for very small screens */
+            .brand-line-1 {
+                font-size: 0.85rem;
+            }
+            
+            .brand-line-2 {
+                font-size: 0.75rem;
+            }
+            
+            /* Video container on very small - height auto */
+            .video-container {
+                height: auto;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+            
+            /* Stats Section Very Small Fix */
+            .stat-card {
+                padding: 0.8rem;
+                min-height: 120px;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            
+            .stat-card h5 {
+                font-size: 0.8rem;
+            }
+            
+            .kit-card .card-body h3 {
+                padding-right: 75px;
+                font-size: 1.4rem;
+                min-height: 50px;
+            }
+            
+            .kit-badge {
+                max-width: 90px;
+                font-size: 0.7rem;
+                padding: 0.3rem 0.6rem;
+                top: 10px;
+                right: 10px;
+            }
+            
+            /* Footer brand logo and text sizes for very small screens - UPDATED LOGO HEIGHT */
+            .footer-brand-logo {
+                height: 200px; /* Keep 200px even on very small screens */
+            }
+            
+            .footer-brand-text {
+                font-size: 1.8rem; /* Keep 1.8rem even on very small screens */
+            }
+            
+            .footer-brand-text span {
+                font-size: 1.6rem; /* Keep 1.6rem even on very small screens */
+            }
+            
+            .btn-primary-custom, .btn-secondary-custom {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.95rem;
+            }
+            
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.7rem 0.9rem !important;
+            }
+        }
+        
+        /* Tablet Optimizations */
+        @media (min-width: 577px) and (max-width: 768px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .video-container {
+                height: auto;
+            }
+            
+            .section-title h2 {
+                font-size: 2.4rem;
+                line-height: 1.3;
+            }
+            
+            /* Stats Tablet Fix */
+            .stat-card {
+                padding: 1.5rem;
+                min-height: 150px;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .stat-card h5 {
+                font-size: 1rem;
+            }
+            
+            .kit-card .card-body h3 {
+                padding-right: 100px;
+                font-size: 1.7rem;
+            }
+            
+            .d-flex.flex-wrap.gap-3 {
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .btn-primary-custom, .btn-secondary-custom {
+                width: auto;
+                min-width: 200px;
+            }
+        }
+        
+        /* Desktop Optimizations - Keep original desktop view */
+        @media (max-width: 1400px) {
+            .company-logo {
+                height: 80px;
+            }
+            
+            .video-container {
+                height: auto;
+                max-width: 550px;
+            }
+            
+            .footer-brand-logo {
+                height: 130px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .company-logo {
+                height: 75px;
+            }
+            
+            .video-container {
+                height: auto;
+                max-width: 500px;
+            }
+            
+            .footer-brand-logo {
+                height: 120px;
+            }
+            
+            .section-title h2 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-title {
+                font-size: 3.2rem;
+            }
+        }
+        
+        /* Landscape Mobile Fixes */
+        @media (max-height: 600px) and (orientation: landscape) {
+            .hero-section {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 60px;
+            }
+            
+            .video-container {
+                height: auto;
+            }
+            
+            .company-logo {
+                height: 55px;
+            }
+            
+            .footer-brand-logo {
+                height: 100px;
+            }
+            
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            /* Stats Landscape Fix */
+            .stat-card {
+                padding: 0.8rem;
+                min-height: 110px;
+            }
+            
+            .stat-number {
+                font-size: 1.8rem;
+            }
+            
+            .stat-card h5 {
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* Fix for touch devices */
+        @media (hover: none) and (pointer: coarse) {
+            .card-custom:hover {
+                transform: none;
+                border-color: rgba(255, 107, 0, 0.2);
+                box-shadow: none;
+            }
+            
+            .card-custom:active {
+                transform: scale(0.98);
+                border-color: var(--accent-orange);
+                box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+            }
+            
+            .feature-card:hover,
+            .stat-card:hover {
+                transform: none;
+                border-color: rgba(255, 107, 0, 0.1);
+                box-shadow: none;
+            }
+            
+            .feature-card:active,
+            .stat-card:active {
+                transform: scale(0.98);
+                border-color: var(--accent-orange);
+                box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+            }
+            
+            .nav-link:hover::after {
+                width: 0;
+            }
+            
+            .btn-primary-custom:hover,
+            .btn-secondary-custom:hover,
+            .demo-nav-btn:hover {
+                transform: none;
+            }
+            
+            .btn-primary-custom:active,
+            .btn-secondary-custom:active,
+            .demo-nav-btn:active {
+                transform: scale(0.98);
+            }
+        }
+        
+        /* Prevent text selection on buttons */
+        .btn-primary-custom,
+        .btn-secondary-custom,
+        .demo-nav-btn {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        /* Improve touch targets */
+        @media (max-width: 768px) {
+            .nav-link,
+            .demo-nav-btn,
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                touch-action: manipulation;
+            }
+            
+            .social-icon {
+                width: 44px;
+                height: 44px;
+                min-height: 44px;
+            }
+            
+            .kit-badge,
+            .hero-badge {
+                min-height: 36px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            /* Ensure proper spacing in navbar */
+            .navbar-nav .nav-item {
+                margin: 0;
+                width: 100%;
+            }
+        }
+        
+        /* Fix for iOS Safari 100vh issue */
+        @supports (-webkit-touch-callout: none) {
+            .hero-section {
+                min-height: -webkit-fill-available;
+            }
+        }
+        
+        /* Ensure images don't overflow */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Fix for Bootstrap container padding on mobile */
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        /* Ensure proper text wrapping */
+        h1, h2, h3, h4, h5, h6, p {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        
+        /* Prevent horizontal scrolling */
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+        }
+        
+        /* FIX 1: CSR images - larger frame, object-fit contain to avoid cropping, background removed to eliminate black boundaries */
+        .image-frame {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            height: 300px; /* increased height */
+            width: 100%;
+            background: transparent; /* changed from rgba(0,0,0,0.3) to transparent */
+            cursor: pointer;
+        }
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* ensures full image visible without cropping */
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .image-frame:hover img {
+            transform: scale(1.02);
+        }
+        .image-frame:hover {
+            box-shadow: 0 0 25px var(--accent-orange), 0 0 40px rgba(255,107,0,0.4);
+        }
+        /* CSR images grid responsive */
+        @media (max-width: 576px) {
+            .image-frame {
+                height: 220px; /* still large enough */
+            }
+        }
+
+        /* Modal styling for image lightbox */
+        .image-modal .modal-content {
+            background: transparent;
+            border: none;
+        }
+        .image-modal .modal-body {
+            padding: 0;
+            text-align: center;
+        }
+        .image-modal .modal-body img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255,107,0,0.5);
+        }
+        .image-modal .btn-close {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            filter: invert(1) grayscale(100%) brightness(200%);
+            opacity: 0.8;
+        }
+        
+        /* FIX 3: competition ladder arrows visible on mobile and better layout */
+        .competition-flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem 1rem;
+        }
+        .competition-flow .flow-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100px;
+        }
+        .competition-flow .flow-arrow {
+            font-size: 2rem;
+            color: var(--accent-orange);
+            margin: 0 0.5rem;
+        }
+        @media (max-width: 576px) {
+            .competition-flow {
+                flex-direction: column;
+            }
+            .competition-flow .flow-arrow {
+                transform: rotate(90deg);
+                margin: 0.5rem 0;
+            }
+        }
+        
+        /* ========== FIX FOR MOBILE TITLES (Certifications & Competitions / Robotics Infrastructure) ========== */
+        @media (max-width: 768px) {
+            #cert-competitions .section-title h2,
+            #schools-infrastructure .section-title h2 {
+                font-size: 1.8rem;      /* Smaller font for long titles */
+                line-height: 1.3;
+                word-break: break-word;  /* Force break if needed */
+                padding: 0 10px;          /* Add side padding for breathing room */
+                hyphens: auto;            /* Optional hyphenation */
+            }
+            /* Ensure the warning span also wraps properly */
+            #cert-competitions .section-title h2 span,
+            #schools-infrastructure .section-title h2 span {
+                display: inline-block;    /* Allow proper wrapping inside span */
+            }
+        }
+        @media (max-width: 576px) {
+            #cert-competitions .section-title h2,
+            #schools-infrastructure .section-title h2 {
+                font-size: 1.5rem;       /* Even smaller on very small devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-robot"></div>
+    </div>
+    
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-element" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+    <div class="floating-element" style="width: 200px; height: 200px; top: 60%; right: 10%;"></div>
+    <div class="floating-element" style="width: 250px; height: 250px; bottom: 10%; left: 15%;"></div>
+    <div class="floating-element" style="width: 150px; height: 150px; top: 20%; right: 20%;"></div>
+    
+    <!-- Cart Notification -->
+    <div class="cart-notification" id="cartNotification">
+        <i class="fas fa-robot me-2"></i>
+        <span id="notificationText">Item added to cart!</span>
+    </div>
+
+    <!-- Checkout Details Modal -->
+    <div class="modal fade" id="checkoutDetailsModal" tabindex="-1" aria-labelledby="checkoutDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content" style="background: var(--tertiary-dark); color: var(--text-light); border: 1px solid rgba(255,107,0,0.3);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,107,0,0.3);">
+                    <h5 class="modal-title text-warning" id="checkoutDetailsModalLabel"><i class="fas fa-truck me-2"></i>Delivery Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutDetailsForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="fullName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control form-control-custom" id="fullName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="age" class="form-label">Age</label>
+                                <input type="number" class="form-control form-control-custom" id="age">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control form-control-custom" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone *</label>
+                                <input type="tel" class="form-control form-control-custom" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="altPhone" class="form-label">Alternate Phone</label>
+                                <input type="tel" class="form-control form-control-custom" id="altPhone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="pincode" class="form-label">Pincode *</label>
+                                <input type="text" class="form-control form-control-custom" id="pincode" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Full Address *</label>
+                            <textarea class="form-control form-control-custom" id="address" rows="2" required></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="landmark" class="form-label">Landmark</label>
+                                <input type="text" class="form-control form-control-custom" id="landmark">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="state" class="form-label">State *</label>
+                                <input type="text" class="form-control form-control-custom" id="state" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Country *</label>
+                            <input type="text" class="form-control form-control-custom" id="country" value="India" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,107,0,0.3);">
+                    <button type="button" class="btn btn-secondary-custom" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary-custom" id="saveCheckoutDetails">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: var(--tertiary-dark); color: var(--text-light); border: 1px solid rgba(255,107,0,0.3);">
+                <div class="modal-header" style="border-bottom: 1px solid rgba(255,107,0,0.3);">
+                    <h5 class="modal-title text-warning" id="thankYouModalLabel"><i class="fas fa-check-circle me-2"></i>Thank You!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle fa-4x text-success"></i>
+                    </div>
+                    <h4 class="mb-3">Thank you for your purchase!</h4>
+                    <p class="mb-3">Our team will contact you within 24 hours for payment and shipping details.</p>
+                    <div class="order-summary p-3" style="background: rgba(255,255,255,0.05); border-radius: 10px;">
+                        <h5 class="text-warning">Order Summary</h5>
+                        <div id="orderSummaryItems" class="text-start small text-white"></div>
+                        <hr class="my-2" style="border-color: rgba(255,107,0,0.3);">
+                        <div class="d-flex justify-content-between text-white">
+                            <span>Total:</span>
+                            <span class="fw-bold text-warning" id="orderSummaryTotal">₹0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid rgba(255,107,0,0.3);">
+                    <button type="button" class="btn btn-primary-custom" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo-font" href="index.html">
+                <img src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/5dad4093-d51e-42cf-8e14-fea12d2acb7d%20(1)-Picsart-AiImageEnhancer-artguru%20(1).png" 
+                     alt="KalkiOrion Robotics Lab Logo" class="company-logo">
+                <div class="brand-text">
+                    <span class="brand-line-1">KALKIORION</span>
+                    <span class="brand-line-2">ROBOTICS LABS</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kits">Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progressreport.html">Progress Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workshop.html">Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- Additional items for mobile/tablet only -->
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="certifications&competitions.html">Certifications & Competitions</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="csrgovernment.html">CSR / Government</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="privacypolicy.html">Privacy & Policy</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="refundpolicy.html">Refund Policy</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="terms&conditions.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="demo-nav-btn" href="demo.html">
+                            <i class="fas fa-calendar-alt me-2"></i>Book Demo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket me-2"></i>Future-Ready Education
+                    </div>
+                    <h1 class="hero-title">CODE. BUILD.<br><span class="d-block mt-2">INNOVATE.</span></h1>
+                    
+                    <!-- NEW: Glowing sub-heading -->
+                    <div class="glowing-subheading">
+                        <i class="fas fa-certificate me-2"></i>India's First QR-Verified Robotics & Innovation Infrastructure for Schools & Institutes, Micro Labs and Students
+                    </div>
+                    
+                    <p class="hero-subtitle">
+                        At KalkiOrion Robotics Labs, We Transform Students Into Creators With Hands-On Learning In Robotics, Python, and Artificial Intelligence. Our Mission Is To Bridge The Gap Between Theory And Real-World Technology.
+                    </p>
+                    
+                    <!-- NEW: Project showcase line -->
+                    <div class="project-showcase">
+                        <i class="fas fa-rocket me-2"></i>From 1 DIY KIT - 15+ Projects
+                    </div>
+                    <div class="project-showcase">
+                        <i class="fas fa-rocket me-2"></i>Learning ➡ Proof ➡ Competition ➡ Recognition
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#courses" class="btn btn-primary-custom">
+                            <i class="fas fa-graduation-cap me-2"></i>Explore Courses
+                        </a>
+                        <a href="demo.html" class="btn btn-secondary-custom">
+                            <i class="fas fa-calendar-alt me-2"></i>Book Demo
+                        </a>
+                    </div>
+                    
+                    <!-- Feature pills: on mobile they stack (col-12), on small and up they become 2x2 grid -->
+                    <div class="row g-3 mt-4 justify-content-center">
+                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                            <span class="feature-pill w-100 text-center">QR Verified Certificates</span>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                            <span class="feature-pill w-100 text-center">Project-Based Progression</span>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                            <span class="feature-pill w-100 text-center">Intra ➡ State ➡ District ➡ National Competitions</span>
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                            <span class="feature-pill w-100 text-center">Inspection-Ready Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="video-container">
+                        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+                            <source src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/grok-video-1fa1ede6-e614-4e34-84f9-d417aa4e6728.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay"></div>
+                        <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-75 p-3 rounded-end rounded-top">
+                            <h5 class="text-warning mb-1"><i class="fas fa-award me-2"></i>Industry Certified</h5>
+                            <p class="mb-0 small">500+ Students Trained With 9.5 Review Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <h5>Students<br>Trained</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-number">9.5</div>
+                        <h5>Review<br>Rating</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <h5>Projects<br>Completed</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <h5>School<br>Partners</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>About <span class="text-warning">Us</span></h2>
+                    </div>
+                    <p class="mb-4">KalkiOrion Robotics Labs is an innovative EdTech company focused on hands-on learning in Robotics, Python, and Artificial Intelligence. We empower students, school learners, and college students with practical skills through both online and offline training programs.</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="text-warning mb-3"><i class="fas fa-bullseye me-2"></i>Our Mission</h4>
+                        <p>To replace theory-heavy STEM Education with verified, project-based innovation systems that prove what students can actually build, solve and create.</p>
+                        <p>Every school can adopt advanced learning without heavy cost or dependency to remove the gap between what students study and what they can actually build.</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="text-warning mb-3"><i class="fas fa-eye me-2"></i>Our Vision</h4>
+                        <p>To become India's Standard for Advance level robotics and innovation verification, where every student's learning journey is measurable, portable and trusted.</p>
+                        <p>To become a trusted national standard so affordable, structured, and transparent that every school can offer it, and every student can benefit from it.</p>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: var(--gradient-primary);">
+                                        <i class="fas fa-user-graduate fa-lg text-dark"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>Expert Mentors</h5>
+                                    <p class="about-text-yellow mb-0">Learn from industry professionals</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex mb-4">
+                                <div class="me-3">
+                                    <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: var(--gradient-primary);">
+                                        <i class="fas fa-project-diagram fa-lg text-dark"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>Project-Based</h5>
+                                    <p class="about-text-yellow mb-0">Hands-on learning approach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-center mb-4">Why Choose <span class="text-warning">Us?</span></h3>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: var(--gradient-primary);">
+                                    <i class="fas fa-hands-helping fa-lg text-dark"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Hands-On Learning</h5>
+                                <p>We believe in learning by doing. Our students build working prototypes and solve real-world problems from day one.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: var(--gradient-primary);">
+                                    <i class="fas fa-laptop-code fa-lg text-dark"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Cutting-Edge Curriculum</h5>
+                                <p>Our courses are continuously updated to include the latest technologies and industry practices.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex mb-4">
+                            <div class="me-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: var(--gradient-primary);">
+                                    <i class="fas fa-industry fa-lg text-dark"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Industry Aligned Curriculum</h5>
+                                <p>Designed based on real tech industry skills and requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <div class="rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: var(--gradient-primary);">
+                                    <i class="fas fa-certificate fa-lg text-dark"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h5>Mentorship & Career Guidance</h5>
+                                <p>Helping students move toward real tech careers.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                        <h4 class="text-warning mb-3">We exist so that every student no matter where they study gets a fair chance to build, understand, and grow with technology.</h4>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section bg-secondary-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Our <span class="text-warning">Courses</span></h2>
+                </div>
+                <p class="section-subtitle">Choose from our cutting-edge courses designed to equip you with future-ready skills. Each course combines theory with hands-on projects.</p>
+            </div>
+            
+            <div class="row">
+                <!-- Robotics Course -->
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-custom">
+                        <div class="card-header-custom text-center">
+                            <i class="fas fa-robot course-icon"></i>
+                            <h3 class="mb-0">Robotics Mastery</h3>
+                            <p class="mb-0 mt-2">From Basics to Autonomous Systems</p>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="mb-4">Master the art of designing, building, and programming intelligent robots. This comprehensive course takes you from basic electronics to advanced autonomous navigation systems.</p>
+                            
+                            <h5 class="text-warning mb-3"><i class="fas fa-list-check me-2"></i>Course Modules</h5>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Introduction to Robotics</li>
+                                        <li>Electronics & Circuits</li>
+                                        <li>Microcontrollers</li>
+                                        <li>Sensors & Actuators</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Robot Mechanics</li>
+                                        <li>Programming with Arduino</li>
+                                        <li>Final Capstone Projects</li>
+                                        <li>And Many More Concepts...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center flex-wrap mt-4 pt-3 border-top border-secondary">
+                                <div>
+                                    <a href="RoboticsSyllabus.html" class="btn btn-secondary-custom">
+                                        Go To Syllabus
+                                    </a>
+                                    <p class="course-availability mb-0 mt-2">Online & Offline Available</p>
+                                </div>
+                                <div>
+                                    <a href="demo.html" class="btn btn-primary-custom">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Python & AI Course -->
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-custom">
+                        <div class="card-header-custom text-center">
+                            <i class="fas fa-brain course-icon"></i>
+                            <h3 class="mb-0">Python & AI</h3>
+                            <p class="mb-0 mt-2">Intelligent Systems Development</p>
+                        </div>
+                        <div class="card-body p-4">
+                            <p class="mb-4">Dive into the world of artificial intelligence with Python. Learn to build intelligent systems, from machine learning models to neural networks and natural language processing.</p>
+                            
+                            <h5 class="text-warning mb-3"><i class="fas fa-list-check me-2"></i>Course Modules</h5>
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Programming Introduction</li>
+                                        <li>Python Basics</li>
+                                        <li>Loops & Functions</li>
+                                        <li>CUI & GUI</li>
+                                        <li>Modules & Libraries</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>Dataset Operations & Visualization</li>
+                                        <li>Real World Projects</li>
+                                        <li>Introduction To AI</li>
+                                        <li>And Many More Concepts...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center flex-wrap mt-4 pt-3 border-top border-secondary">
+                                <div>
+                                    <a href="Python&AISyllabus.html" class="btn btn-secondary-custom">
+                                        Go To Syllabus
+                                    </a>
+                                    <p class="course-availability mb-0 mt-2">Online & Offline Available</p>
+                                </div>
+                                <div>
+                                    <a href="demo.html" class="btn btn-primary-custom">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New "More Courses" subtitle with white text -->
+            <div class="row">
+                <div class="col-12 text-center mt-5" id="more-courses">
+                    <h4 class="text-warning">And Many More Courses Will Be Available Soon...</h4>
+                    <p class="text-light">Stay tuned for 3D Modeling, Web Development, Data Analytics and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kits Section -->
+    <section id="kits" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Robotics <span class="text-warning">Kits</span></h2>
+                </div>
+                <p class="section-subtitle">Get hands-on with our specially designed robotics kits that include all components needed for your learning journey.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <!-- Kit 1 -->
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-custom kit-card">
+                        <span class="kit-badge pulse">Best Seller</span>
+                        <div class="card-body p-4">
+                            <h3 class="text-center mb-4">Robotic Kit Phase - I</h3>
+                            <div class="text-center mb-4">
+                                <i class="fas fa-microchip fa-4x mb-3" style="background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; color: transparent;"></i>
+                                <h2 class="price-tag">₹15,000</h2>
+                                <p class="kit-shipping-info">One-time purchase | Free shipping</p>
+                            </div>
+                            
+                            <h5 class="text-warning mb-3"><i class="fas fa-box-open me-2"></i>Kit Includes</h5>
+                            
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Arduino Uno & NANO Board with USB Cable</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Basic Electronic Components Set</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Motor Driver, BODC Motors and Servo Motors</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Ultrasonic Sensors, IR Sensors and more types of Sensors</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Wheels, Caster Wheels and Chassis</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Jumper Wires, Screw Driver with Screw Sets</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>And Many More Components...</span>
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-top border-secondary">
+                                <h5 class="text-warning mb-3"><i class="fas fa-user-graduate me-2"></i>Suitable For</h5>
+                                <p class="mb-4">Beginners in robotics, school students (Grade 6+), and anyone starting their robotics journey.</p>
+                                
+                                <div class="text-center">
+                                    <button class="btn btn-primary-custom w-100" onclick="addToCart('Robotic Kit Phase - I', 15000)">
+                                        <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kit 2 -->
+                <div class="col-lg-5 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-custom kit-card">
+                        <span class="kit-badge">Advanced</span>
+                        <div class="card-body p-4">
+                            <h3 class="text-center mb-4">Robotic Kit Phase - II</h3>
+                            <div class="text-center mb-4">
+                                <i class="fas fa-robot fa-4x mb-3" style="background: var(--gradient-primary); -webkit-background-clip: text; background-clip: text; color: transparent;"></i>
+                                <h2 class="price-tag">₹25,500</h2>
+                                <p class="kit-shipping-info">One-time purchase | Free shipping</p>
+                            </div>
+                            
+                            <h5 class="text-warning mb-3"><i class="fas fa-box-open me-2"></i>Kit Includes</h5>
+                            
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>ESP32 & Node MCU Microcontrollers</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Advanced Sensors Package</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Camera Module for Vision</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Phase-I all components with more Quantity</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Advanced Motors</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>Robotic Arm & Mini Humanoid Robot</span>
+                            </div>
+                            <div class="kit-feature">
+                                <i class="fas fa-check"></i>
+                                <span>And Many More Concepts...</span>
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-top border-secondary">
+                                <h5 class="text-warning mb-3"><i class="fas fa-user-graduate me-2"></i>Suitable For</h5>
+                                <p class="mb-4">Intermediate learners, college students, and those who have completed Phase 1 or have basic robotics knowledge.</p>
+                                
+                                <div class="text-center">
+                                    <button class="btn btn-primary-custom w-100" onclick="addToCart('Robotic Kit Phase - II', 25500)">
+                                        <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cart Summary -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card-custom p-4" id="cart-section" style="display: none;">
+                        <h3 class="text-center mb-4">Your <span class="text-warning">Cart</span></h3>
+                        <div id="cart-items" class="mb-4">
+                            <!-- Cart items will be added here -->
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="mb-0 text-white">Total: ₹<span id="cart-total">0</span></h4>
+                                <p class="text-white mb-0">With Free Shipping & Excluding GST on all kits</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary-custom me-2" onclick="clearCart()">
+                                    <i class="fas fa-trash me-2"></i>Clear Cart
+                                </button>
+                                <button class="btn btn-primary-custom" onclick="checkout()">
+                                    <i class="fas fa-shopping-bag me-2"></i>Proceed to Checkout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs & Progression Section -->
+    <section id="progression" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Programs & <span class="text-warning">Progression</span></h2>
+                </div>
+                <p class="section-subtitle">Student Progression That Cannot Be Faked</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card-custom p-5">
+                        <h3 class="text-warning mb-4 text-center">Certificate Ladder</h3>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center p-3 progression-item" style="background: rgba(255,107,0,0.1); border-radius: 10px;">
+                                <span class="badge bg-warning text-dark me-3 p-3 fs-6">Level 1</span>
+                                <span class="fs-5">Robotics Builder</span>
+                            </div>
+                            <div class="d-flex align-items-center p-3 progression-item" style="background: rgba(255,107,0,0.1); border-radius: 10px;">
+                                <span class="badge bg-warning text-dark me-3 p-3 fs-6">Level 2</span>
+                                <span class="fs-5">Automation Developer</span>
+                            </div>
+                            <div class="d-flex align-items-center p-3 progression-item" style="background: rgba(255,107,0,0.1); border-radius: 10px;">
+                                <span class="badge bg-warning text-dark me-3 p-3 fs-6">Level 3</span>
+                                <span class="fs-5">Junior Innovator</span>
+                            </div>
+                            <div class="d-flex align-items-center p-3 progression-item" style="background: rgba(255,107,0,0.1); border-radius: 10px;">
+                                <span class="badge bg-warning text-dark me-3 p-3 fs-6">Level 4</span>
+                                <span class="fs-5">Competition Engineer</span>
+                            </div>
+                            <div class="d-flex align-items-center p-3 progression-item" style="background: rgba(255,107,0,0.1); border-radius: 10px;">
+                                <span class="badge bg-warning text-dark me-3 p-3 fs-6">Level 5</span>
+                                <span class="fs-5">National Robotics Excellence</span>
+                            </div>
+                        </div>
+                        <div class="mt-5 p-3 text-center" style="border: 2px dashed var(--accent-orange); border-radius: 15px;">
+                            <i class="fas fa-lock fs-2 me-2 text-warning"></i>
+                            <span class="fs-4 fw-bold">Next level unlocks only after project submission.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Competitions Section -->
+    <section id="cert-competitions" class="section bg-secondary-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Certifications & <span class="text-warning">Competitions</span></h2>
+                </div>
+                <p class="section-subtitle">Earned Certificates. Earned Competitions.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="card-custom p-5">
+                        <h3 class="text-warning mb-4 text-center">Competition Ladder</h3>
+                        <div class="competition-flow">
+                            <div class="flow-item">
+                                <div class="display-4 text-warning">🏆</div>
+                                <h4>Intra</h4>
+                            </div>
+                            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="flow-item">
+                                <div class="display-4 text-warning">🏆</div>
+                                <h4>District</h4>
+                            </div>
+                            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="flow-item">
+                                <div class="display-4 text-warning">🏆</div>
+                                <h4>State</h4>
+                            </div>
+                            <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                            <div class="flow-item">
+                                <div class="display-4 text-warning">🏆</div>
+                                <h4>National</h4>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-4" style="background: rgba(0,0,0,0.2); border-radius: 15px;">
+                            <h4 class="text-warning mb-3">Eligibility depends on:</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Projects completed</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Portfolio score</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Active school license</li>
+                            </ul>
+                            <p class="fw-bold mt-3">Competitions are earned, not bought.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Most Robotics Programs Fail Section -->
+    <section id="why-fails" class="section bg-secondary-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Why Most Robotics Programs <span class="text-warning">Fails</span> With Schools, Institutes and Individuals</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-warning mb-4"><i class="fas fa-exclamation-triangle me-2"></i>Problems</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i> Labs stop working after 3-6 months</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i> Learning depends on one teacher</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i> Certificates have no proof</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i> Parents Question Value</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i> Inspectors ask for data schools can't show</li>
+                        </ul>
+                        <div class="mt-4 p-3" style="border-left: 4px solid var(--accent-orange); background: rgba(255,107,0,0.1);">
+                            <p class="mb-0 fw-bold fs-5">Robotics doesn't fail because of technology. <br> It fails because systems are missing and expensive.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-warning mb-4"><i class="fas fa-lightbulb me-2"></i>Solutions</h3>
+                        <h4 class="text-info mb-3">The KalkiOrion Hybrid Model</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <h5 class="text-warning"><i class="fas fa-wifi me-2"></i>Offline</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> DIY Robotics Kits</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Classroom Sessions</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Trainer Facilitation</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Live Demonstrations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-4">
+                                    <h5 class="text-warning"><i class="fas fa-cloud me-2"></i>Online</h5>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Project Unlocks System</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> QR - Verified Certificates</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Students Dashboards</li>
+                                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Competition Eligibility</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3" style="border-left: 4px solid var(--accent-orange); background: rgba(255,107,0,0.1);">
+                            <p class="mb-0 fw-bold fs-5">Offline Builds Confidence. <br> Online Locks Outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Schools, Institutes and Individuals Choose Us? Section -->
+    <section id="why-choose" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Why Schools, Institutes and Individuals <span class="text-warning">Choose Us?</span></h2>
+                </div>
+                <p class="section-subtitle">Why KalkiOrion Robotics Labs is not comparable?</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-warning mb-4"><i class="fas fa-times-circle text-danger me-2"></i>Others</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i>Classes</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i>Attendance certificates</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i>Multiple Kits</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i>One Time Sale</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i>Teacher-Dependent</li>
+                            <li class="mb-3"><i class="fas fa-times-circle text-danger me-2"></i>Event Competitions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-warning mb-4"><i class="fas fa-check-circle text-success me-2"></i>KalkiOrion</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Infrastructure</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>QR Verified Proof</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>1 KIT - 15+ Projects</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Annual System</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Platform-Controlled</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>National Ladder</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="p-3" style="border-left: 4px solid var(--accent-orange); background: rgba(255,107,0,0.1);">
+                        <p class="mb-0 fw-bold fs-5">Schools don't leave systems. <br> They leave vendors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CSR / Government Section -->
+    <section id="csr-government" class="section bg-secondary-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>CSR / <span class="text-warning">Government</span></h2>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3 class="text-warning mb-4">Audit - Ready Robotics & STEM Programs for CSR & Government Schools</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Measurable Outcomes</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>QR-Verified Certificates</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Utilization Reports</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Reusable Kits</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- Image grid with six images (three existing + three new), using object-fit contain and click-to-enlarge modal (background removed) -->
+                    <div class="row g-2">
+                        <!-- Existing images -->
+                        <div class="col-6 col-md-4">
+                            <div class="image-frame" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://drive.google.com/thumbnail?id=1ej8FwOwBecaEuIWDE9R0ts49GwGjJuiU&sz=w1200">
+                                <img src="https://drive.google.com/thumbnail?id=1ej8FwOwBecaEuIWDE9R0ts49GwGjJuiU&sz=w600" alt="CSR Image 1" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="image-frame" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://drive.google.com/thumbnail?id=13IzK_KWmfP3rQw_hTP8amMsb2dGeqrV1&sz=w1200">
+                                <img src="https://drive.google.com/thumbnail?id=13IzK_KWmfP3rQw_hTP8amMsb2dGeqrV1&sz=w600" alt="CSR Image 3" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="image-frame" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://lh3.googleusercontent.com/d/1gGhg8pMo283s-TbbOEDMXzieqs2_kej5=w1200?authuser=0">
+                                <img src="https://lh3.googleusercontent.com/d/1gGhg8pMo283s-TbbOEDMXzieqs2_kej5=w600?authuser=0" alt="CSR Image 2" loading="lazy">
+                            </div>
+                        </div>
+                        <!-- New images -->
+                        <div class="col-6 col-md-4">
+                            <div class="image-frame" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://drive.google.com/thumbnail?id=11uZaEDs9c6WgDM5oyMjtMOlRCTOX9Elc&sz=w1200">
+                                <img src="https://drive.google.com/thumbnail?id=11uZaEDs9c6WgDM5oyMjtMOlRCTOX9Elc&sz=w600" alt="CSR Image 4" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="image-frame" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://drive.google.com/thumbnail?id=1OlenmKyUT88wLX2RCfYvqPydaLNn3Nqe&sz=w1200">
+                                <img src="https://drive.google.com/thumbnail?id=1OlenmKyUT88wLX2RCfYvqPydaLNn3Nqe&sz=w600" alt="CSR Image 5" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="image-frame" data-bs-toggle="modal" data-bs-target="#imageModal" data-img-src="https://drive.google.com/thumbnail?id=1c4DqDsGCMeShlGrYUDMlYjnOdicdFU4m&sz=w1200">
+                                <img src="https://drive.google.com/thumbnail?id=1c4DqDsGCMeShlGrYUDMlYjnOdicdFU4m&sz=w600" alt="CSR Image 6" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robotics & Innovation Infrastructure for Schools -->
+    <section id="schools-infrastructure" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Robotics & Innovation Infrastructure <span class="text-warning">for Schools & Institutions</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-warning mb-4"><i class="fas fa-school me-2"></i>What Schools & Institutes Get:</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Reusable DIY Kits</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>QR Verified Students Certificates</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Students Unique ID</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>KPI Parents Visible Dashboards</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Competition Ladder</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Low Annual Renewal model</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="card-custom p-4 h-100">
+                        <h3 class="text-warning mb-4"><i class="fas fa-star me-2"></i>Why Schools & Institutes choose Us:</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Reduced Inspection Risk</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Parent trust through proof</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Predictable per-student cost</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Curriculum Aligned with Modern STEM Goals</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Structured Implementation with Zero Operational Burden</li>
+                            <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Measurable Student Outcomes and Skill Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section bg-secondary-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Key <span class="text-warning">Features</span></h2>
+                </div>
+                <p class="section-subtitle">Discover what makes our learning platform unique and effective for students of all levels.</p>
+            </div>
+            <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h4>Hybrid Learning Ecosystem</h4>
+                    <p>Integrated offline lab training with structured online project tracking to ensure complete concept clarity and practical mastery.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Hands-On Robotics Training</h4>
+                    <p>Students build, program, and test real robotics systems, gaining practical experience in hardware, sensors, and embedded systems.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <h4>Project Unlock System</h4>
+                    <p>Step-by-step project progression model that unlocks advanced robotics and AI builds based on performance and skill development.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h4>QR-Verified Certifications</h4>
+                    <p>Digitally verifiable certificates linked to real project outcomes, ensuring authenticity and professional credibility.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Innovation & Competition Pathway</h4>
+                    <p>Access to robotics competitions, hackathons, and innovation showcases that encourage creativity and real-world problem solving.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Future Tech Skill Development</h4>
+                    <p>Focused training in Robotics, Python, Embedded Systems, and Artificial Intelligence aligned with real industry applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Contact <span class="text-warning">Us</span></h2>
+                </div>
+                <p class="section-subtitle">Have questions? Get in touch with our team for more information about courses, kits, or partnerships.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="row">
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="contact-info">
+                            <h3 class="text-warning mb-4">Get In Touch</h3>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>+91 9315847513<br>+91 8076401469</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>info@kalkiorionroboticslabs.in</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>DLF Phase 5, Golf Course Road, Sector 43, Gurugram, Haryana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                        <div class="contact-form">
+                            <h3 class="text-warning mb-4">Send Message</h3>
+                            <div id="formStatus" class="form-status mb-3"></div>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" id="name" name="name" class="form-control form-control-custom" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" id="email" name="email" class="form-control form-control-custom" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control form-control-custom" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" name="message" class="form-control form-control-custom" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a href="index.html" class="footer-brand">
+                        <img src="https://raw.githubusercontent.com/kalkiorionroboticslab/Comapny_Logo/main/5dad4093-d51e-42cf-8e14-fea12d2acb7d%20(1)-Picsart-AiImageEnhancer-artguru%20(1).png" 
+                             alt="KalkiOrion Robotics Lab Logo" class="footer-brand-logo">
+                        <div class="footer-brand-text">
+                            KALKIORION<br>
+                            <span>ROBOTICS LABS</span>
+                        </div>
+                    </a>
+                    <p class="mb-4">Empowering students with hands-on learning in Robotics, Python, and Artificial Intelligence through project-based training and mentorship.</p>
+                    <div class="text-md-start">
+                        <a href="https://www.facebook.com/profile.php?id=61588278818643" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+
+                                <a href="https://x.com/kalkiorionrobot" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+
+                                <a href="https://www.instagram.com/kalkiorionroboticslabs/" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/kalki-orion-robotics-labs/" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+
+                                <a href="https://youtube.com/@kalkiorionroboticslabs?si=VKiubulxP-po81W3" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="progressreport.html">Progress Report</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="certifications&competitions.html">Certifications & Competitions</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="workshop.html">Workshop</a></li>
+                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                            <li><a href="demo.html">Book Demo</a></li>
+                            <li><a href="csrgovernment.html">CSR / Government</a></li>
+                            <li><a href="privacypolicy.html">Privacy & Policy</a></li>
+                            <li><a href="refundpolicy.html">Refund Policy</a></li>
+                            <li><a href="terms&conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Our Courses</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#courses">Robotics Mastery</a></li>
+                            <li><a href="#courses">Python & AI</a></li>
+                            <!-- Changed from #courses to #more-courses -->
+                            <li><a href="#courses">3D Modeling</a></li>
+                            <li><a href="#courses">Web Development</a></li>
+                            <li><a href="#courses">Data Analytics</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-links">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-warning"></i>DLF Phase 5, Golf Course Road, Sector 43, Gurugram, Haryana, India</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2 text-warning"></i>+91 9315847513</li>
+                            <li class="mb-2"><i class="fas fa-phone me-2 text-warning"></i>+91 8076401469</li>
+                            <li class="mb-2"><i class="fas fa-envelope me-2 text-warning"></i>info@kalkiorionroboticslabs.in</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-4" style="border-color: rgba(255, 107, 0, 0.3);">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2026 KalkiOrion Robotics Labs. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p>Designed with <i class="fas fa-heart text-danger"></i> for the future innovators</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal (Lightbox) -->
+    <div class="modal fade image-modal" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img src="" id="modalImage" class="img-fluid" alt="Enlarged view">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Particles.js
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: ["#ff6b00", "#ffc107", "#00f3ff", "#9d4edd"] },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ff6b00",
+                    opacity: 0.2,
+                    width: 1
+                },
+                move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" }
+                }
+            }
+        });
+        
+        // Initialize cart
+        let cart = [];
+        // Store checkout details
+        let checkoutDetails = null;
+        // Flag to track if Continue was clicked
+        let modalContinueClicked = false;
+        
+        // Loading animation - hide only once on page load
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loadingOverlay').classList.add('hidden');
+            }, 1500);
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            // Update active nav link based on scroll position
+            updateActiveNavLink();
+        });
+        
+        // Update active nav link based on scroll position
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        const navbarToggler = document.querySelector('.navbar-toggler');
+                        navbarToggler.click();
+                    }
+                }
+            });
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const navbarToggler = document.querySelector('.navbar-toggler');
+                    navbarToggler.click();
+                }
+            });
+        });
+        
+        // Show cart notification
+        function showNotification(message) {
+            const notification = document.getElementById('cartNotification');
+            const notificationText = document.getElementById('notificationText');
+            
+            notificationText.textContent = message;
+            notification.classList.add('show');
+            
+            setTimeout(function() {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+        
+        // Add to cart function
+        function addToCart(itemName, price) {
+            // Check if item already in cart
+            const existingItemIndex = cart.findIndex(item => item.name === itemName);
+            
+            if (existingItemIndex !== -1) {
+                cart[existingItemIndex].quantity += 1;
+                showNotification(`${itemName} quantity updated in cart!`);
+            } else {
+                cart.push({
+                    name: itemName,
+                    price: price,
+                    quantity: 1
+                });
+                showNotification(`${itemName} added to cart!`);
+            }
+            
+            updateCartDisplay();
+            
+            // Show cart section if hidden
+            document.getElementById('cart-section').style.display = 'block';
+            
+            // Reset continue flag
+            modalContinueClicked = false;
+            
+            // Open checkout details modal
+            const modalEl = document.getElementById('checkoutDetailsModal');
+            const modal = new bootstrap.Modal(modalEl);
+            
+            // Remove previous hidden event listener to avoid duplicates
+            modalEl.removeEventListener('hidden.bs.modal', handleModalHidden);
+            modalEl.addEventListener('hidden.bs.modal', handleModalHidden);
+            
+            modal.show();
+        }
+        
+        // Handle modal hidden event
+        function handleModalHidden() {
+            if (!modalContinueClicked) {
+                // User closed modal without continuing, clear cart
+                cart = [];
+                updateCartDisplay();
+                showNotification('Cart cleared because details were not provided.');
+            }
+            // Reset flag for next time
+            modalContinueClicked = false;
+        }
+        
+        // Save checkout details and send to Google Sheets
+        document.getElementById('saveCheckoutDetails').addEventListener('click', function() {
+            const fullName = document.getElementById('fullName').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const altPhone = document.getElementById('altPhone').value;
+            const pincode = document.getElementById('pincode').value;
+            const address = document.getElementById('address').value;
+            const landmark = document.getElementById('landmark').value;
+            const state = document.getElementById('state').value;
+            const country = document.getElementById('country').value;
+
+            if (!fullName || !email || !phone || !pincode || !address || !state || !country) {
+                alert('Please fill all required fields.');
+                return;
+            }
+
+            checkoutDetails = { fullName, age, email, phone, altPhone, pincode, address, landmark, state, country };
+
+            // Send to Google Sheets
+            // Replace with your actual Google Apps Script URL
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxTSdMDGJSLzmvscU1rj9hhtRiegTQG5VR6cU8kvkoJMdAgaoG-RsFv3hNbGvwyTG6d/exec'; // <-- Replace with your deployed Apps Script URL
+
+            fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...checkoutDetails, cart: cart })
+            }).catch(error => console.error('Error sending to Google Sheets:', error));
+
+            // Mark that continue was clicked
+            modalContinueClicked = true;
+            
+            // Close modal
+            bootstrap.Modal.getInstance(document.getElementById('checkoutDetailsModal')).hide();
+        });
+
+        // Update cart display
+        function updateCartDisplay() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            
+            // Clear current items
+            cartItems.innerHTML = '';
+            
+            // Calculate total and display items
+            let total = 0;
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="text-center text-white mb-0">Your cart is empty</p>';
+                document.getElementById('cart-section').style.display = 'none';
+            } else {
+                cart.forEach((item, index) => {
+                    total += item.price * item.quantity;
+                    
+                    const itemElement = document.createElement('div');
+                    itemElement.className = 'd-flex justify-content-between align-items-center border-bottom pb-3 mb-3';
+                    itemElement.innerHTML = `
+                        <div>
+                            <h6 class="mb-1 text-white">${item.name}</h6>
+                            <small class="text-white">₹${item.price.toLocaleString()} × ${item.quantity}</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="me-3 fw-bold text-white">₹${(item.price * item.quantity).toLocaleString()}</span>
+                            <div class="btn-group btn-group-sm" role="group">
+                                <button class="btn btn-outline-warning" onclick="updateQuantity(${index}, -1)">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button class="btn btn-outline-warning" onclick="updateQuantity(${index}, 1)">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="btn btn-outline-danger" onclick="removeFromCart(${index})">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    
+                    cartItems.appendChild(itemElement);
+                });
+            }
+            
+            cartTotal.textContent = total.toLocaleString();
+        }
+        
+        // Update item quantity
+        function updateQuantity(index, change) {
+            const newQuantity = cart[index].quantity + change;
+            
+            if (newQuantity < 1) {
+                removeFromCart(index);
+                return;
+            }
+            
+            cart[index].quantity = newQuantity;
+            updateCartDisplay();
+            showNotification(`${cart[index].name} quantity updated to ${newQuantity}`);
+        }
+        
+        // Remove from cart
+        function removeFromCart(index) {
+            const itemName = cart[index].name;
+            cart.splice(index, 1);
+            updateCartDisplay();
+            showNotification(`${itemName} removed from cart`);
+        }
+        
+        // Clear cart
+        function clearCart() {
+            if (cart.length === 0) return;
+            
+            cart = [];
+            updateCartDisplay();
+            showNotification('Cart cleared');
+        }
+        
+        // Checkout function
+        function checkout() {
+            if (cart.length === 0) {
+                showNotification('Your cart is empty!');
+                return;
+            }
+
+            // Show thank you modal with order summary
+            const orderItems = document.getElementById('orderSummaryItems');
+            orderItems.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                orderItems.innerHTML += `<div class="d-flex justify-content-between"><span>${item.name} x${item.quantity}</span><span>₹${(item.price * item.quantity).toLocaleString()}</span></div>`;
+            });
+            document.getElementById('orderSummaryTotal').textContent = `₹${total.toLocaleString()}`;
+
+            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            thankYouModal.show();
+        }
+        
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Collect form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        const formStatus = document.getElementById('formStatus');
+
+        // Show sending status
+        formStatus.textContent = 'Sending message...';
+        formStatus.className = 'form-status info';
+
+        try {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbwKrdbTdbNpWj-hB1Hf1t-VhEdYp4UT1PuE8WiTBQnqwpXLvHcCiEstFxQrqlFfB4sI/exec', {
+            method: 'POST',
+            mode: 'no-cors',              // important for CORS-free requests
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject, message })
+            });
+
+            // Because of no-cors we cannot read response, so we assume success.
+            formStatus.textContent = 'Thank you! Your message has been sent. We\'ll respond within 24 hours.';
+            formStatus.className = 'form-status success';
+            document.getElementById('contactForm').reset();
+
+            // Clear status after 5 seconds
+            setTimeout(() => {
+            formStatus.textContent = '';
+            formStatus.className = 'form-status';
+            }, 5000);
+
+        } catch (error) {
+            formStatus.textContent = 'Something went wrong. Please try again later.';
+            formStatus.className = 'form-status error';
+            console.error('Error:', error);
+        }
+        });
+
+        // Clear cart when thank you modal is hidden
+        const thankYouModalEl = document.getElementById('thankYouModal');
+        thankYouModalEl.addEventListener('hidden.bs.modal', function () {
+            // Clear cart
+            cart = [];
+            updateCartDisplay();
+            showNotification('Cart cleared after purchase.');
+        });
+        
+        // Initialize cart display on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartDisplay();
+            
+            // Add animation to hero section elements
+            setTimeout(() => {
+                const heroBadge = document.querySelector('.hero-badge');
+                if (heroBadge) heroBadge.classList.add('animate__animated', 'animate__pulse');
+            }, 500);
+        });
+
+        // Image modal - set large image source on click
+        document.querySelectorAll('.image-frame[data-bs-toggle="modal"]').forEach(frame => {
+            frame.addEventListener('click', function() {
+                const imgSrc = this.getAttribute('data-img-src');
+                document.getElementById('modalImage').src = imgSrc;
+            });
+        });
+    </script>
+</body>
+</html>
